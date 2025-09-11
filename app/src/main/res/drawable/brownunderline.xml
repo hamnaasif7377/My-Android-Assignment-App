@@ -4,7 +4,7 @@
 
     <size
         android:width="200dp"
-        android:height="1.5dp"/>   <!-- hairline thickness -->
+        android:height="2.5dp"/>   <!-- hairline thickness -->
 
     <solid android:color="@color/brownish"/>
 </shape>
