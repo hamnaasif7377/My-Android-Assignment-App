@@ -318,7 +318,7 @@
         android:orientation="horizontal"
         android:weightSum="4.5">
 
-        <!-- Follow Button -->
+
         <Button
             android:textAllCaps="false"
             android:layout_width="0dp"
