@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical"
+android:weightSum="10"
+android:background="@color/black">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="0.75"
+    android:gravity="center">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/status_barblack">
+    </ImageView>
+</RelativeLayout>
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="7.75"
+    android:gravity="center">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/hummingbird" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:src="@drawable/statuslinegray"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+    </ImageView>
+    <ImageView
+        android:layout_width="230dp"
+        android:layout_height="7dp"
+        android:src="@drawable/statusline"
+        android:layout_marginTop="7dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+    </ImageView>
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="60dp"
+        android:src="@drawable/likered">
+    </ImageView>
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"
+        android:layout_marginLeft="40dp"
+        android:src="@drawable/translucentredlike">
+    </ImageView>
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="53dp"
+        android:layout_marginLeft="40dp"
+        android:src="@drawable/translucentredlike">
+    </ImageView>
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="73dp"
+        android:layout_marginLeft="60dp"
+        android:src="@drawable/moretranslucentredlike">
+    </ImageView>
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/craig_dp"
+        android:id="@+id/dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal"
+        android:layout_marginLeft="50dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="craig_love"
+            android:textSize="14sp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_marginLeft="15dp"
+            android:id="@+id/donthave"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="    4h"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textColor="@color/pastel_gray"/>
+    </LinearLayout>
+</RelativeLayout>
+
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="1.5"
+    android:gravity="center">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/my_story">
+    </ImageView>
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/translucentredlike">
+    </ImageView>
+
+
+
+</RelativeLayout>
+
+</LinearLayout>

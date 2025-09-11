@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="grey">#9B9B9B</color>
+    <color name="orange">#FE9105</color>
+    <color name="dark_grey">#2D2D2D</color>
+    <color name="pastel_red">#FFB3BA</color>
+    <color name="pastel_orange">#FFDAB3</color>
+    <color name="pastel_yellow">#FFFFBA</color>
+    <color name="pastel_green">#BAFFC9</color>
+    <color name="lightbrown">#AD805F</color>
+    <color name="pastel_blue">#BAE1FF</color>
+    <color name="pastel_purple">#E3BAFF</color>
+    <color name="pastel_pink">#FFCCE5</color>
+    <color name="pastel_gray">#E0E0E0</color>
+    <color name="brownish">#8E3F42</color>
+    <color name="inputgray">#F8F8F8</color>
+    <color name="pinkish">#9A5A5B</color>
+    <color name="lightgray">#DCDCDC</color>
+    <color name="brickbrown">#9F5758</color>
+    <color name="buttongray">#4A4A4A</color>
+    <color name="transparent">#00000000</color>
+    <color name="msgbuttongray">#F3F3F3</color>
+    <color name="transparentgrey">#80B0B0B0</color>
+    <color name="lightbargray">#80EFECEC</color>
+
+
+</resources>

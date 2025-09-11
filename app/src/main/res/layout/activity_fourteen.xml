@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="10"
+    android:background="@color/black">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.75"
+        android:gravity="center">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/status_barblack">
+        </ImageView>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="7.75"
+        android:gravity="center">
+
+        <!-- Background FIRST -->
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/hummingbird"
+            android:scaleType="centerCrop"
+            android:adjustViewBounds="true"/>
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="10dp"
+            android:src="@drawable/linewhite"
+            android:layout_marginTop="8dp">
+        </ImageView>
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="10dp"
+            android:src="@drawable/linegray"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="40dp">
+        </ImageView>
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="10dp"
+            android:src="@drawable/linegray"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="82dp">
+        </ImageView>
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="10dp"
+            android:src="@drawable/linegray"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="164dp">
+        </ImageView>
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="10dp"
+            android:src="@drawable/linegray"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="246dp">
+        </ImageView>
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="10dp"
+            android:src="@drawable/linegray"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="328dp">
+        </ImageView>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:src="@drawable/highlightdp"
+            android:id="@+id/dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="0dp"/>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal"
+            android:layout_marginLeft="50dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Highlight"
+                android:textSize="18sp"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:layout_marginLeft="15dp"
+                android:id="@+id/donthave"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="   December 3,2023"
+                android:textSize="18sp"
+                android:textColor="@color/pastel_gray"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Artist . "
+            android:textSize="14sp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_marginLeft="85dp"
+            android:layout_marginTop="55dp"
+            android:id="@+id/artisttext"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="   Song Title >"
+            android:textSize="18sp"
+            android:layout_marginTop="51dp"
+            android:textColor="@color/pastel_gray"
+            android:layout_marginLeft="120dp"/>
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="40dp"
+            android:src="@drawable/soundwave"
+            android:layout_marginLeft="57dp"
+            android:layout_marginTop="46dp">
+        </ImageView>
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="40dp"
+            android:src="@drawable/close"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="25dp">
+        </ImageView>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.5"
+        android:gravity="center">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/myhighlight">
+        </ImageView>
+
+
+
+    </RelativeLayout>
+
+</LinearLayout>

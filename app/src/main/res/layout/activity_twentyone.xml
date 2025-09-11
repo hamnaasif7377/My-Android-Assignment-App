@@ -1,0 +1,507 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:layout_width="500dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="-40dp"
+        >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/status_bar1" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:layout_marginTop="-20dp">
+
+        <ImageView
+            android:id="@+id/back_icon"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/leftback"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="16dp" />
+
+        <TextView
+            android:id="@+id/username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="kyan.coleman"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:layout_centerInParent="true" />
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/bluetick"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="265dp" />
+        <ImageView
+            android:id="@+id/add_icon"
+            android:layout_width="50dp"
+            android:layout_height="25dp"
+            android:src="@drawable/options"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="16dp" />
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/profile_stats"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="4">
+
+
+        <ImageView
+            android:id="@+id/profile_pic"
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:layout_weight="1"
+            android:src="@drawable/dp"
+            android:scaleType="fitCenter"
+            android:layout_gravity="center"
+             />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="151"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_gravity="center" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="posts"
+                android:layout_marginLeft="20dp"
+                android:textSize="19sp"
+                android:layout_gravity="center" />
+        </LinearLayout>
+
+        <!-- Part 3 -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="112k"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_gravity="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="followers"
+                android:textSize="19sp"
+                android:layout_gravity="center" />
+        </LinearLayout>
+
+        <!-- Part 4 -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="162"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_gravity="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="following"
+                android:textSize="19sp"
+                android:layout_gravity="center" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/profile_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kyan Coleman"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:textColor="@color/black" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="28dp"
+            android:layout_marginTop="0dp"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:background="@drawable/message_bar_bg"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:id="@+id/tag_icon"
+                android:layout_width="14dp"
+                android:layout_height="16dp"
+                android:layout_marginTop="3dp"
+                android:src="@drawable/threads"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/tag_icon"
+                android:layout_marginStart="6dp"
+                android:text="kyan.coleman"
+                android:textSize="14sp"
+                android:textColor="@color/black"/>
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:text="Blogger"
+            android:textSize="14sp"
+            android:textColor="@color/grey"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:layout_marginLeft="-2dp"
+            android:text="At vero eos et accusamus et iusto  odio dignissios ducimus️\nqui blanditiis praesentium voluptatum deleniti atque corrupti\nquos dolores at quas molestias excepturi sint occaecat... more"
+            android:textSize="14sp"
+            android:textColor="@color/black"/>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="0dp"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:src="@drawable/link"
+                android:layout_marginEnd="6dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="kyan.co"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:textColor="@color/black"/>
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="15dp"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:src="@drawable/avatars"
+            android:scaleType="fitCenter"
+            android:layout_marginEnd="6dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Followed by "
+                    android:textSize="14sp"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="yourfriend"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=", "
+                    android:textSize="14sp"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="anotherfriend"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" and"
+                    android:textSize="14sp"
+                    android:textColor="@color/black"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="297 others"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:orientation="horizontal"
+        android:weightSum="4.5">
+
+        <!-- Follow Button -->
+        <Button
+            android:textAllCaps="false"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.25"
+            android:text="Follow"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            android:background="@drawable/followbutton"
+            android:layout_marginEnd="4dp"/>
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.25"
+            android:gravity="center"
+            android:text="Message"
+            android:textStyle="bold"
+            android:background="@drawable/translucentgraybutton"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:layout_marginEnd="2dp"/>
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:background="@drawable/translucentgraybutton"
+            android:layout_height="match_parent"
+            android:layout_weight="1.25"
+            android:gravity="center"
+            android:text="Email"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:layout_marginEnd="2dp"/>
+
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.75"
+            android:background="@drawable/translucentgraybutton"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="30dp"
+                android:src="@drawable/suggestedusers"
+                android:layout_centerInParent="true"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="15dp"
+        android:gravity="center_vertical">
+
+        <!-- Highlight 1 -->
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginEnd="10dp"
+            android:src="@drawable/dp"
+            android:scaleType="centerCrop"
+            android:padding="3dp"/>
+
+        <!-- Highlight 2 -->
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginEnd="10dp"
+            android:src="@drawable/dp"
+            android:scaleType="centerCrop"
+            android:padding="3dp"/>
+
+        <!-- Highlight 3 -->
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginEnd="10dp"
+            android:src="@drawable/dp"
+            android:scaleType="centerCrop"
+            android:padding="3dp"/>
+
+        <!-- Highlight 4 -->
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginEnd="10dp"
+            android:src="@drawable/dp"
+            android:scaleType="centerCrop"
+            android:padding="3dp"/>
+
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/graycicle"
+            android:scaleType="centerCrop"
+            android:padding="3dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:orientation="horizontal"
+        android:weightSum="5">
+
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2.5"
+            android:gravity="center"
+            android:src="@drawable/grid"
+            android:layout_marginEnd="2dp"/>
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2.5"
+            android:gravity="center"
+            android:src="@drawable/tag"
+            android:layout_marginEnd="2dp"/>
+
+
+    </LinearLayout>
+    <ImageView
+        android:layout_width="220dp"
+        android:layout_height="10dp"
+        android:layout_marginLeft="-4dp"
+        android:layout_marginTop="-3dp"
+        android:src="@drawable/blackunderline">
+
+    </ImageView>
+    <!-- Posts Grid -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="170dp"
+            android:layout_weight="1"
+            android:src="@drawable/hummingbird"
+            android:scaleType="centerCrop"/>
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="170dp"
+            android:layout_weight="1"
+            android:src="@drawable/hummingbird"
+            android:scaleType="centerCrop"/>
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="170dp"
+            android:layout_weight="1"
+            android:src="@drawable/hummingbird"
+            android:scaleType="centerCrop"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.5"
+        >
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="-20dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/my_profile">
+        </ImageView>
+    </RelativeLayout>
+
+</LinearLayout>

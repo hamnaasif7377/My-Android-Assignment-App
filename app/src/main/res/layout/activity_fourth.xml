@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fourth"
+    android:background="@color/white">
+    <ImageView
+        android:id="@+id/status_bar"
+        android:layout_width="999dp"
+        android:layout_height="60dp"
+        android:src="@drawable/status_bar1"
+        android:layout_marginTop="-10dp">
+    </ImageView>
+    <ImageView
+        android:layout_width="160dp"
+        android:layout_height="20dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="490dp"
+        android:src="@drawable/thinline">
+
+    </ImageView>
+    <ImageView
+        android:layout_width="160dp"
+        android:layout_height="20dp"
+        android:layout_marginLeft="230dp"
+        android:layout_marginTop="490dp"
+        android:src="@drawable/thinline">
+
+    </ImageView>
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/leftback"
+        android:layout_marginTop="40dp">
+
+    </ImageView>
+    <TextView
+        android:id="@+id/socially"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Socially"
+        android:textSize="60sp"
+        android:textColor="@color/brownish"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp">
+    </TextView>
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="390dp"
+        android:layout_height="50dp"
+        android:background="@drawable/inputbox"
+        android:padding="12dp"
+        android:text="asad_khasanov"
+        android:textColor="@color/dark_grey"
+        android:layout_below="@id/socially"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="20dp">
+    </EditText>
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="390dp"
+        android:layout_height="50dp"
+        android:background="@drawable/inputbox"
+        android:padding="10dp"
+        android:text="Password"
+        android:layout_below="@id/username"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/lightgray">
+
+    </EditText>
+
+    <TextView
+        android:id="@+id/forgot_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Forgot password?"
+        android:textColor="@color/brownish"
+        android:textSize="14sp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/password"
+        android:layout_marginTop="6dp"
+        android:layout_marginRight="20dp"/>
+
+    <Button
+        android:id="@+id/login_button"
+        android:layout_width="390dp"
+        android:layout_height="50dp"
+        android:text="Log in"
+        android:background="@drawable/brownbutton"
+        android:textColor="@android:color/white"
+        android:layout_below="@id/forgot_password"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="20dp">
+    </Button>
+
+    <ImageView
+        android:id="@+id/bottom_line"
+        android:layout_width="120dp"
+        android:layout_height="4dp"
+        android:src="@drawable/line"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"/>
+
+    <ImageView
+        android:id="@+id/thinline"
+        android:layout_width="250dp"
+        android:layout_height="4dp"
+        android:layout_below="@+id/login_button"
+        android:layout_marginTop="201dp"
+        android:layout_marginLeft="70dp"
+        android:src="@drawable/thinline" />
+
+    <TextView
+        android:id="@+id/bottomsocially"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/thinline"
+        android:layout_marginTop="40dp"
+        android:text="Socially"
+        android:textColor="@color/brownish"
+        android:textSize="20sp"
+        android:layout_centerHorizontal="true">
+
+    </TextView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OR"
+        android:textStyle="bold"
+        android:layout_below="@+id/login_button"
+        android:layout_marginTop="45dp"
+        android:textSize="19sp"
+        android:textColor="@color/grey"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/OR">
+    </TextView>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="170dp"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Don’t have an account? "
+            android:textSize="19sp"
+            android:textColor="@color/grey"
+            android:id="@+id/donthave">
+        </TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sign up."
+            android:textSize="19sp"
+            android:textStyle="bold"
+            android:textColor="@color/brownish">
+        </TextView>
+    </LinearLayout>
+
+</RelativeLayout>

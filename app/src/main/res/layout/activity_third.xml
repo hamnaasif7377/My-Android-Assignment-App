@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".third"
+    android:background="@color/white">
+
+    <ImageView
+        android:id="@+id/status_bar"
+        android:layout_width="999dp"
+        android:layout_height="60dp"
+        android:src="@drawable/status_bar1"
+        android:layout_marginTop="-10dp">
+    </ImageView>
+
+    <TextView
+        android:id="@+id/socially"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Socially"
+        android:textSize="70sp"
+        android:textColor="@color/brownish"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="190dp">
+    </TextView>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile_image"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/socially"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/dp" />
+
+    <TextView
+        android:id="@+id/username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="jacob_w"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:layout_below="@id/profile_image"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp" />
+
+
+    <Button
+        android:id="@+id/login_button"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="Log in"
+        android:textSize="16sp"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/brownish"
+        android:layout_below="@id/username"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp" />
+
+    <TextView
+        android:id="@+id/switch_accounts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Switch accounts"
+        android:textSize="14sp"
+        android:textColor="@color/brownish"
+        android:layout_below="@id/login_button"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp">
+    </TextView>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Don’t have an account? "
+            android:textSize="14sp"
+            android:textColor="@color/brownish"
+            android:id="@+id/donthave">
+        </TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sign up."
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textColor="@color/brownish">
+        </TextView>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/bottom_line"
+        android:layout_width="120dp"
+        android:layout_height="4dp"
+        android:src="@drawable/line"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"/>
+
+    <ImageView
+        android:id="@+id/thinline"
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:layout_below="@+id/switch_accounts"
+        android:layout_marginTop="68dp"
+        android:src="@drawable/thinline" />
+</RelativeLayout>

@@ -1,0 +1,432 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".eighth">
+
+    <ImageView
+        android:id="@+id/status_bar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:src="@drawable/status_bar1"
+        android:layout_alignParentTop="true" />
+
+    <RelativeLayout
+        android:id="@+id/top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_below="@+id/status_bar"
+        android:layout_marginTop="-20dp">
+
+        <ImageView
+            android:id="@+id/back_icon"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/leftback"
+            android:layout_marginStart="-120dp"
+            android:layout_gravity="center_vertical" />
+
+        <TextView
+            android:id="@+id/username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="jacob_w"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor="@color/brownish"
+            android:layout_gravity="center"
+            android:layout_marginStart="30dp"/>
+
+        <ImageView
+            android:id="@+id/add_icon"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/dropdown"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="100dp"/>
+
+    </RelativeLayout>
+    <ImageView
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@drawable/search"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="110dp"
+        android:layout_gravity="center_vertical" />
+
+    <EditText
+        android:id="@+id/search_bar"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@id/top_bar"
+        android:layout_margin="10dp"
+        android:background="@drawable/message_bar_bg"
+        android:hint="         Search"
+
+        android:paddingStart="15dp"
+        android:textColorHint="@color/grey"
+        android:textColor="@color/black"
+        android:layout_marginLeft="30dp"
+        android:textSize="18sp"/>
+
+    <LinearLayout
+        android:id="@+id/chat_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/search_bar"
+        android:layout_marginTop="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/joshua"
+                android:layout_gravity="center_vertical"
+                android:scaleType="centerCrop"
+                android:layout_marginEnd="10dp"/>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="joshua_l"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Have a nice day, bro!"
+                    android:textColor="@color/grey"
+                    android:textSize="14sp"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="· now"
+                android:textColor="@color/grey"
+                android:textSize="12sp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginEnd="10dp"/>
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/camera"
+                android:layout_gravity="center_vertical"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/karennne"
+                android:layout_gravity="center_vertical"
+                android:scaleType="centerCrop"
+                android:layout_marginEnd="10dp"/>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="joshua_l"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Have a nice day, bro!"
+                    android:textColor="@color/grey"
+                    android:textSize="14sp"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="· now"
+                android:textColor="@color/grey"
+                android:textSize="12sp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginEnd="10dp"/>
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/camera"
+                android:layout_gravity="center_vertical"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/martini"
+                android:layout_gravity="center_vertical"
+                android:scaleType="centerCrop"
+                android:layout_marginEnd="10dp"/>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="joshua_l"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Have a nice day, bro!"
+                    android:textColor="@color/grey"
+                    android:textSize="14sp"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="· now"
+                android:textColor="@color/grey"
+                android:textSize="12sp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginEnd="10dp"/>
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/camera"
+                android:layout_gravity="center_vertical"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/andrew"
+                android:layout_gravity="center_vertical"
+                android:scaleType="centerCrop"
+                android:layout_marginEnd="10dp"/>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="joshua_l"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Have a nice day, bro!"
+                    android:textColor="@color/grey"
+                    android:textSize="14sp"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="· now"
+                android:textColor="@color/grey"
+                android:textSize="12sp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginEnd="10dp"/>
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/camera"
+                android:layout_gravity="center_vertical"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/kiero"
+                android:layout_gravity="center_vertical"
+                android:scaleType="centerCrop"
+                android:layout_marginEnd="10dp"/>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="joshua_l"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Have a nice day, bro!"
+                    android:textColor="@color/grey"
+                    android:textSize="14sp"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="· now"
+                android:textColor="@color/grey"
+                android:textSize="12sp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginEnd="10dp"/>
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/camera"
+                android:layout_gravity="center_vertical"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/maxjac"
+                android:layout_gravity="center_vertical"
+
+                android:scaleType="centerCrop"
+                android:layout_marginEnd="10dp"/>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="joshua_l"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Have a nice day, bro!"
+                    android:textColor="@color/grey"
+                    android:textSize="14sp"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="· now"
+                android:textColor="@color/grey"
+                android:textSize="12sp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginEnd="10dp"/>
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/camera" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_marginBottom="10dp">
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/camera"
+            android:layout_marginBottom="15dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Camera"
+            android:textColor="@color/brownish"
+            android:layout_marginBottom="15dp"
+            android:textSize="14sp"
+            android:textStyle="bold"/>
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/bottom_line"
+        android:layout_width="120dp"
+        android:layout_height="4dp"
+        android:src="@drawable/line"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp" />
+</RelativeLayout>
