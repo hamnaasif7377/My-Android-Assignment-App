@@ -31,7 +31,7 @@
                 android:id="@+id/search_container"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:padding="10dp">
+                android:padding="3dp">
 
                 <EditText
                     android:id="@+id/search_bar"
@@ -70,7 +70,7 @@
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
                 android:weightSum="5"
-                android:padding="5dp">
+                android:paddingBottom="5dp">
 
                 <Button
                     android:id="@+id/btn_shop"
@@ -80,9 +80,12 @@
                     android:drawableLeft="@drawable/camera"
                     android:text="Shop"
                     android:textAllCaps="false"
+                    android:layout_marginRight="2dp"
+                    android:layout_marginLeft="10dp"
                     android:textSize="14sp"
-                    android:background="@drawable/translucentgraybutton"
-                    android:textColor="@color/black" />
+                    android:paddingLeft="10dp"
+                    android:background="@drawable/simplebutton"
+                    android:textColor="@color/brownish" />
 
                 <Button
                     android:id="@+id/btn_style"
@@ -90,10 +93,11 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="Style"
+                    android:layout_marginRight="2dp"
                     android:textAllCaps="false"
                     android:textSize="14sp"
-                    android:background="@drawable/translucentgraybutton"
-                    android:textColor="@color/black" />
+                    android:background="@drawable/simplebutton"
+                    android:textColor="@color/brownish" />
 
                 <Button
                     android:id="@+id/btn_sports"
@@ -102,9 +106,10 @@
                     android:layout_weight="1"
                     android:text="Sports"
                     android:textAllCaps="false"
+                    android:layout_marginRight="2dp"
                     android:textSize="14sp"
-                    android:background="@drawable/translucentgraybutton"
-                    android:textColor="@color/black" />
+                    android:background="@drawable/simplebutton"
+                    android:textColor="@color/brownish" />
 
                 <Button
                     android:id="@+id/btn_auto"
@@ -114,8 +119,9 @@
                     android:text="Auto"
                     android:textAllCaps="false"
                     android:textSize="14sp"
-                    android:background="@drawable/translucentgraybutton"
-                    android:textColor="@color/black" />
+                    android:layout_marginRight="2dp"
+                    android:background="@drawable/simplebutton"
+                    android:textColor="@color/brownish" />
 
                 <Button
                     android:id="@+id/btn_music"
@@ -125,8 +131,9 @@
                     android:text="Music"
                     android:textAllCaps="false"
                     android:textSize="14sp"
-                    android:background="@drawable/translucentgraybutton"
-                    android:textColor="@color/black" />
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/simplebutton"
+                    android:textColor="@color/brownish" />
             </LinearLayout>
 
             <!-- First block (2 small stacked + 1 big square) -->
