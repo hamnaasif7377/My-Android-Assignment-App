@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">hamna app task</string>
+    <string name="post_caption"><b>kyan.coleman</b> The game in japan was amazing and I want to share some photos</string>
+    <string name="likedby_caption">Liked by <b>craig_love</b> and <b>44,686 others</b></string>
+    <string name="likedby_caption2">Liked by <b>karennne</b> and <b>44,686 others</b></string>
+    <string name="post_caption2"><b>craig_love</b> Code is like humor. When you have to explain it, it is bad</string>
+
 </resources>

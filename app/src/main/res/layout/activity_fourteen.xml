@@ -157,9 +157,6 @@
             android:layout_height="match_parent"
             android:src="@drawable/myhighlight">
         </ImageView>
-
-
-
     </RelativeLayout>
 
 </LinearLayout>
