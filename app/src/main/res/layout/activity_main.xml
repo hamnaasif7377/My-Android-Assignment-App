@@ -2,6 +2,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@color/white">
     <RelativeLayout
         android:id="@+id/status_bar"
@@ -14,7 +15,6 @@
             android:layout_height="match_parent"
             android:src="@drawable/status_bar1" />
     </RelativeLayout>
-    <!-- Scrollable Content -->
     <ScrollView
         android:id="@+id/scroll_area"
         android:layout_width="match_parent"
@@ -211,25 +211,31 @@
                 android:layout_margin="10dp"
                 android:gravity="center_vertical">
 
-                <ImageView
+                <de.hdodenhof.circleimageview.CircleImageView
                     android:layout_width="75dp"
                     android:layout_height="75dp"
                     android:layout_marginEnd="10dp"
-                    android:src="@drawable/dp"
+                    app:civ_border_width="3dp"
+                    app:civ_border_color="@color/grey"
+                    android:src="@drawable/scenery3"
                     android:scaleType="centerCrop" />
 
-                <ImageView
+                <de.hdodenhof.circleimageview.CircleImageView
                     android:layout_width="75dp"
                     android:layout_height="75dp"
                     android:layout_marginEnd="10dp"
-                    android:src="@drawable/dp"
+                    android:src="@drawable/image4"
+                    app:civ_border_color="@color/grey"
+                    app:civ_border_width="3dp"
                     android:scaleType="centerCrop" />
 
-                <ImageView
+                <de.hdodenhof.circleimageview.CircleImageView
                     android:layout_width="75dp"
                     android:layout_height="75dp"
                     android:layout_marginEnd="10dp"
-                    android:src="@drawable/dp"
+                    android:src="@drawable/image3"
+                    app:civ_border_width="3dp"
+                    app:civ_border_color="@color/grey"
                     android:scaleType="centerCrop" />
 
                 <ImageView
@@ -239,7 +245,6 @@
                     android:scaleType="centerCrop" />
             </LinearLayout>
 
-            <!-- Tabs (Posts / Tagged) -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="30dp"
@@ -264,7 +269,6 @@
                 android:layout_marginLeft="10dp"
                 android:src="@drawable/brownunderline" />
 
-            <!-- Posts Grid -->
             <GridLayout
                 android:id="@+id/posts_grid"
                 android:layout_width="match_parent"
@@ -278,42 +282,39 @@
                     android:layout_columnWeight="1"
                     android:adjustViewBounds="true"
                     android:scaleType="centerCrop"
-                    android:src="@drawable/hummingbird"/><ImageView
+                    android:src="@drawable/scenery"/>
+                <ImageView
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_margin="1dp"
                     android:layout_columnWeight="1"
                     android:adjustViewBounds="true"
                     android:scaleType="centerCrop"
-                    android:src="@drawable/hummingbird"/><ImageView
+                    android:src="@drawable/scenery2"/>
+                <ImageView
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_margin="1dp"
                     android:layout_columnWeight="1"
                     android:adjustViewBounds="true"
                     android:scaleType="centerCrop"
-                    android:src="@drawable/hummingbird"/><ImageView
+                    android:src="@drawable/scenery3"/>
+                <ImageView
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_margin="1dp"
                     android:layout_columnWeight="1"
                     android:adjustViewBounds="true"
                     android:scaleType="centerCrop"
-                    android:src="@drawable/hummingbird"/><ImageView
+                    android:src="@drawable/image3"/>
+                <ImageView
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_margin="1dp"
                     android:layout_columnWeight="1"
                     android:adjustViewBounds="true"
                     android:scaleType="centerCrop"
-                    android:src="@drawable/hummingbird"/><ImageView
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="1dp"
-                    android:layout_columnWeight="1"
-                    android:adjustViewBounds="true"
-                    android:scaleType="centerCrop"
-                    android:src="@drawable/hummingbird"/>
+                    android:src="@drawable/image4"/>
                 <ImageView
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
@@ -329,47 +330,28 @@
                     android:layout_columnWeight="1"
                     android:adjustViewBounds="true"
                     android:scaleType="centerCrop"
-                    android:src="@drawable/hummingbird"/>
-                <ImageView
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="1dp"
-                    android:layout_columnWeight="1"
-                    android:adjustViewBounds="true"
-                    android:scaleType="centerCrop"
-                    android:src="@drawable/hummingbird"/>
-                <ImageView
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="1dp"
-                    android:layout_columnWeight="1"
-                    android:adjustViewBounds="true"
-                    android:scaleType="centerCrop"
-                    android:src="@drawable/hummingbird"/>
-                <ImageView
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="1dp"
-                    android:layout_columnWeight="1"
-                    android:adjustViewBounds="true"
-                    android:scaleType="centerCrop"
-                    android:src="@drawable/hummingbird"/>
+                    android:src="@drawable/image5"/>
 
             </GridLayout>
         </LinearLayout>
     </ScrollView>
 
-    <!-- Bottom Bar (fixed) -->
     <RelativeLayout
         android:id="@+id/bottom_bar"
         android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:layout_alignParentBottom="true">
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/tab">
 
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:scaleType="centerCrop"
-            android:src="@drawable/my_story"/>
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="30dp"
+            android:layout_height="35dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="2dp"
+            android:layout_marginRight="26dp"
+            android:src="@drawable/dp">
+        </de.hdodenhof.circleimageview.CircleImageView>
+
+
     </RelativeLayout>
 </RelativeLayout>
