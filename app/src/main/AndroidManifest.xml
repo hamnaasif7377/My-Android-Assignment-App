@@ -12,6 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.HamnaAppTask">
         <activity
+            android:name=".fifth"
+            android:exported="false" />
+        <activity
             android:name=".sixth"
             android:exported="false" />
         <activity
