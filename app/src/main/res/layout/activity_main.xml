@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
@@ -80,345 +81,437 @@
             <!-- 1. karennne liked 3 posts -->
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="35dp"
                 android:orientation="horizontal">
-
-                <ImageView
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
-                    android:src="@drawable/dp"
-                    android:layout_marginRight="8dp" />
-
-                <LinearLayout
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:orientation="vertical">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/not1"
-                        android:textSize="14sp"
-                        android:paddingBottom="5dp"
-                        android:textColor="@color/black" />
-
-                    <LinearLayout
-                        android:orientation="horizontal"
-                        android:layout_width="wrap_content"
-                        android:layout_marginBottom="10dp"
-                        android:layout_height="wrap_content">
-
-                        <ImageView
-                            android:layout_width="40dp"
-                            android:layout_height="40dp"
-                            android:src="@drawable/squareimage1"
-                            android:layout_marginRight="5dp"/>
-
-                        <ImageView
-                            android:layout_width="40dp"
-                            android:layout_height="40dp"
-                            android:src="@drawable/squareimage2"
-                            android:layout_marginRight="5dp"/>
-
-                        <ImageView
-                            android:layout_width="40dp"
-                            android:layout_height="40dp"
-                            android:src="@drawable/squareimage3"/>
-                    </LinearLayout>
-                </LinearLayout>
-            </LinearLayout>
-
-            <!-- 2. kiero_d, zackjohn, craig_love liked joshua_l photo -->
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
-
-                <!-- Profile DP -->
-                <ImageView
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
-                    android:src="@drawable/dp"
-                    android:layout_marginRight="8dp"/>
-
-                <!-- Text in the middle -->
-                <TextView
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="@string/not2"
-                    android:textSize="14sp"
-                    android:textColor="@color/black"/>
-
-                <!-- Right-side post image -->
-                <ImageView
-                    android:layout_width="60dp"
-                    android:layout_height="60dp"
-                    android:src="@drawable/squareimage1"/>
-            </LinearLayout>
-
-
-            <!-- 3. kiero_d started following craig_love -->
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
-
-                <ImageView
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
-                    android:src="@drawable/dp"
-                    android:layout_marginRight="8dp"/>
 
                 <TextView
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/not3"
-                    android:textSize="14sp"
-                    android:textColor="@color/black"/>
+                    android:layout_height="35dp"
+                    android:text=" Follow Requests"
+                    android:textSize="18sp"
+                    android:paddingBottom="5dp"
+                    android:textColor="@color/brownish" />
+
             </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/lightgray"
+                android:layout_marginTop="1dp"
+                android:layout_marginBottom="1dp"/>
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal">
+                android:orientation="vertical"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:padding="8dp">
 
-                <!-- Profile DP -->
-                <ImageView
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
-                    android:src="@drawable/dp"
-                    android:layout_marginRight="8dp"/>
-
-                <!-- Right side (text + grid of images) -->
-                <LinearLayout
-                    android:layout_width="0dp"
+                <!-- First line: New in bold -->
+                <TextView
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:orientation="vertical">
+                    android:text="New"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:paddingBottom="0dp"/>
 
-                    <!-- Caption -->
+                <!-- Second line: dp, text, images -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+
+                    <!-- Profile dp -->
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/dp"
+                        android:layout_marginRight="8dp"/>
+
+                    <!-- Notification text -->
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/you1"
+                        android:textSize="17sp"
+                        android:textColor="@color/black"/>
+
+
+                    <!-- Post thumbnails -->
+                    <ImageView
+                        android:layout_width="65dp"
+                        android:layout_height="65dp"
+                        android:src="@drawable/squareimage1"
+                        android:layout_marginRight="5dp"/>
+
+
+                </LinearLayout>
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/lightgray"
+                android:layout_marginTop="-1dp"
+                android:layout_marginBottom="1dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="-10dp"
+                android:layout_marginTop="-10dp"
+                android:padding="8dp">
+
+                <!-- First line: New in bold -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Today"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:paddingBottom="4dp"/>
+
+                <!-- Second line: DP, text, post image -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+
+                    <!-- Profile DP -->
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/dp"
+                        android:layout_marginEnd="8dp"/>
+
+                    <!-- Notification text -->
+                    <TextView
+                        android:layout_width="170dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/you2"
+                        android:textSize="16sp"
+                        android:textColor="@color/black"
+                        android:scrollHorizontally="false"/>
+
+
+                    <!-- Right-side post image -->
+                    <ImageView
+                        android:layout_width="65dp"
+                        android:layout_height="65dp"
+                        android:src="@drawable/squareimage1"/>
+                </LinearLayout>
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/lightgray"
+                android:layout_marginTop="-1dp"
+                android:layout_marginBottom="1dp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="-10dp"
+                android:padding="8dp">
+
+                <!-- First line: Today in bold -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="This Week"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:paddingBottom="4dp"/>
+
+                <!-- Second line: DP, text, post image -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+
+                    <!-- Profile DP -->
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/dp"
+                        android:layout_marginEnd="8dp"/>
+
+                    <!-- Notification text -->
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/you3"
+                        android:textSize="16dp"
+                        android:textColor="@color/black"
+                        android:scrollHorizontally="false"/>
+
+                    <!-- Right-side post image -->
+                    <ImageView
+                        android:layout_width="65dp"
+                        android:layout_height="65dp"
+                        android:src="@drawable/squareimage1"/>
+                </LinearLayout>
+
+                <!-- Third line: DP, text, heart + Reply -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_marginTop="-5dp">
+
+                    <!-- Heart icon -->
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/like"
+                        android:layout_marginStart="40dp"
+                        android:layout_marginEnd="10dp"/>
+
+                    <!-- Reply text in gray -->
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/not4"
-                        android:textSize="14sp"
-                        android:textColor="@color/black"/>
-
-                    <GridLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:columnCount="6"
-                        android:layout_marginTop="5dp">
-
-                        <!-- First row: 6 images -->
-                        <ImageView
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
-                            android:layout_columnWeight="1"
-                            android:adjustViewBounds="true"
-                            android:src="@drawable/squareimage6"
-                            android:layout_margin="2dp"/>
-
-                        <ImageView
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
-                            android:layout_columnWeight="1"
-                            android:adjustViewBounds="true"
-                            android:src="@drawable/squareimage6"
-                            android:layout_margin="2dp"/>
-
-                        <ImageView
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
-                            android:layout_columnWeight="1"
-                            android:adjustViewBounds="true"
-                            android:src="@drawable/squareimage6"
-                            android:layout_margin="2dp"/>
-
-                        <ImageView
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
-                            android:layout_columnWeight="1"
-                            android:adjustViewBounds="true"
-                            android:src="@drawable/squareimage6"
-                            android:layout_margin="2dp"/>
-
-                        <ImageView
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
-                            android:layout_columnWeight="1"
-                            android:adjustViewBounds="true"
-                            android:src="@drawable/squareimage6"
-                            android:layout_margin="2dp"/>
-
-                        <ImageView
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
-                            android:layout_columnWeight="1"
-                            android:adjustViewBounds="true"
-                            android:src="@drawable/squareimage6"
-                            android:layout_margin="2dp"/>
-
-                        <!-- Second row: 2 images -->
-                        <ImageView
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
-                            android:layout_columnWeight="1"
-                            android:adjustViewBounds="true"
-                            android:src="@drawable/squareimage6"
-                            android:layout_margin="2dp"/>
-
-                        <ImageView
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
-                            android:layout_columnWeight="1"
-                            android:adjustViewBounds="true"
-                            android:src="@drawable/squareimage6"
-                            android:layout_margin="2dp"/>
-                    </GridLayout>
+                        android:text="Reply"
+                        android:textColor="@color/grey"
+                        android:textSize="14sp"/>
                 </LinearLayout>
             </LinearLayout>
 
 
-
-            <!-- 5. maxjacobson and zackjohn liked mis_potter post -->
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
-
-                <!-- Profile DP -->
-                <ImageView
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
-                    android:src="@drawable/dp"
-                    android:layout_marginRight="8dp"/>
-
-                <!-- Text in the middle -->
-                <TextView
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="@string/not5"
-                    android:textSize="14sp"
-                    android:textColor="@color/black"/>
-
-                <!-- Right-side post image -->
-                <ImageView
-                    android:layout_width="60dp"
-                    android:layout_height="60dp"
-                    android:src="@drawable/squareimage1"/>
-            </LinearLayout>
-
-            <!-- 6. maxjacobson and craig_love liked martini_rond post -->
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
-
-                <!-- Profile DP -->
-                <ImageView
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
-                    android:src="@drawable/dp"
-                    android:layout_marginRight="8dp"/>
-
-                <!-- Text in the middle -->
-                <TextView
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="@string/not6"
-                    android:textSize="14sp"
-                    android:textColor="@color/black"/>
-
-                <!-- Right-side post image -->
-                <ImageView
-                    android:layout_width="60dp"
-                    android:layout_height="60dp"
-                    android:src="@drawable/squareimage1"/>
-            </LinearLayout>
-
-            <!-- 7. karennne liked martini_rond's comment -->
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
-
-                <ImageView
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
-                    android:src="@drawable/dp"
-                    android:layout_marginRight="8dp"/>
-
-                <TextView
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="@string/not7"
-                    android:textSize="14sp"
-                    android:textColor="@color/black"/>
-
-                <ImageView
-                    android:layout_width="60dp"
-                    android:layout_height="60dp"
-                    android:src="@drawable/squareimage1"/>
-            </LinearLayout>
-
-            <!-- 8. maxjacobson liked 3 posts -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginTop="-10dp"
                 android:padding="8dp">
+
+                <!-- Profile DP -->
                 <ImageView
                     android:layout_width="40dp"
                     android:layout_height="40dp"
                     android:src="@drawable/dp"
-                    android:layout_marginRight="8dp"/>
-                <LinearLayout
+                    android:layout_marginEnd="8dp"/>
+
+                <!-- Notification text -->
+                <TextView
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:orientation="vertical">
+                    android:text="@string/you4"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"/>
+
+                <!-- Message button -->
+                <Button
+                    android:textAllCaps="false"
+                    android:layout_width="120dp"
+                    android:layout_height="40dp"
+                    android:textStyle="bold"
+                    android:background="@drawable/simplebutton"
+                    android:text="Message"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:padding="8dp">
+
+                <!-- Profile DP -->
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/dp"
+                    android:layout_marginEnd="8dp"/>
+
+                <!-- Notification text -->
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/you5"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"/>
+
+                <!-- Message button -->
+                <Button
+                    android:textAllCaps="false"
+                    android:layout_width="120dp"
+                    android:layout_height="40dp"
+                    android:textStyle="bold"
+                    android:background="@drawable/simplebutton"
+                    android:text="Message"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:padding="8dp">
+
+                <!-- Profile DP -->
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/dp"
+                    android:layout_marginEnd="8dp"/>
+
+                <!-- Notification text -->
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/you6"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"/>
+
+                <!-- Message button -->
+                <Button
+                    android:textAllCaps="false"
+                    android:layout_width="120dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/brownbutton"
+                    android:text="Follow"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"/>
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/lightgray"
+                android:layout_marginTop="-1dp"
+                android:layout_marginBottom="1dp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="-5dp"
+                android:layout_marginBottom="10dp"
+                android:padding="8dp">
+
+                <!-- First line: New in bold -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="This Month"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:paddingBottom="0dp"/>
+
+                <!-- Second line: dp, text, images -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+
+                    <!-- Profile dp -->
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/dp"
+                        android:layout_marginRight="8dp"/>
+
+                    <!-- Notification text -->
                     <TextView
-                        android:layout_width="wrap_content"
+                        android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:text="@string/not8"
-                        android:textSize="14sp"
-                        android:textColor="@color/black"/>
-                    <LinearLayout
-                        android:orientation="horizontal"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content">
-                        <ImageView
-                            android:layout_width="60dp"
-                            android:layout_height="60dp"
-                            android:src="@drawable/squareimage1"
-                            android:layout_marginRight="5dp"/>
-                        <ImageView
-                            android:layout_width="60dp"
-                            android:layout_height="60dp"
-                            android:src="@drawable/squareimage1"
-                            android:layout_marginRight="5dp"/>
-                        <ImageView
-                            android:layout_width="60dp"
-                            android:layout_height="60dp"
-                            android:src="@drawable/squareimage1"/>
-                    </LinearLayout>
+                        android:layout_weight="1"
+                        android:text="@string/you7"
+                        android:textSize="17sp"
+                        android:textColor="@color/black"
+                        android:paddingEnd="5dp"
+                        android:scrollHorizontally="false"/>
+
+
+                    <!-- Message button -->
+                    <Button
+                        android:textAllCaps="false"
+                        android:layout_width="120dp"
+                        android:layout_height="40dp"
+                        android:textStyle="bold"
+                        android:background="@drawable/simplebutton"
+                        android:text="Message"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"/>
+
+
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="-5dp"
+                android:layout_marginBottom="10dp"
+                android:padding="8dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="-5dp"
+                    android:gravity="center_vertical">
+
+                    <!-- Profile dp -->
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/dp"
+                        android:layout_marginRight="8dp"/>
+
+                    <!-- Notification text -->
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/you8"
+                        android:textSize="17sp"
+                        android:textColor="@color/black"
+                        android:paddingEnd="5dp"
+                        android:scrollHorizontally="false"/>
+
+                    <!-- Message button -->
+                    <Button
+                        android:textAllCaps="false"
+                        android:layout_width="120dp"
+                        android:layout_height="40dp"
+                        android:textStyle="bold"
+                        android:background="@drawable/simplebutton"
+                        android:text="Message"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"/>
+
+
                 </LinearLayout>
             </LinearLayout>
 
         </LinearLayout>
+
+
     </ScrollView>
 
-    <!-- Bottom Navigation Bar -->
     <RelativeLayout
         android:id="@+id/bottom_bar"
         android:layout_width="match_parent"
-        android:layout_height="70dp"
+        android:layout_height="80dp"
         android:layout_alignParentBottom="true"
         android:background="@drawable/pgelevenbottombar">
 
@@ -426,7 +519,7 @@
             android:layout_width="30dp"
             android:layout_height="35dp"
             android:layout_alignParentEnd="true"
-            android:layout_marginTop="2dp"
+            android:layout_marginTop="3dp"
             android:layout_marginRight="26dp"
             android:src="@drawable/dp" />
 
@@ -437,4 +530,5 @@
             android:layout_alignParentBottom="true"
             android:layout_centerInParent="true" />
     </RelativeLayout>
+
 </RelativeLayout>

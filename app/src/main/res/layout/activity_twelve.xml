@@ -1,10 +1,534 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".twelve">
+    android:background="@color/white"
+    tools:context=".eighth">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <!-- Status Bar -->
+    <ImageView
+        android:id="@+id/status_bar"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/status_bar1"
+        android:layout_alignParentTop="true" />
+
+    <!-- Row with Following and You -->
+    <LinearLayout
+        android:id="@+id/follow_you_row"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/status_bar"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/btn_following"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Following"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor="@color/brownish" />
+
+        <TextView
+            android:id="@+id/btn_you"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="You"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor="@color/brownish"/>
+    </LinearLayout>
+
+    <!-- Underlines -->
+    <ImageView
+        android:layout_width="230dp"
+        android:layout_height="10dp"
+        android:layout_marginLeft="-20dp"
+        android:layout_marginTop="78dp"
+        android:src="@drawable/blackunderline" />
+
+    <ImageView
+        android:layout_width="230dp"
+        android:layout_height="10dp"
+        android:layout_marginLeft="200dp"
+        android:layout_marginTop="78dp"
+        android:src="@drawable/grayunderline" />
+
+    <!-- Scrollable Content -->
+    <ScrollView
+        android:id="@+id/scroll_feed"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/follow_you_row"
+        android:layout_marginTop="-10dp"
+        android:layout_above="@id/bottom_bar">
+
+        <LinearLayout
+            android:id="@+id/feed_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <!-- 1. karennne liked 3 posts -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dp"
+                        android:text=" Follow Requests"
+                        android:textSize="18sp"
+                        android:paddingBottom="5dp"
+                        android:textColor="@color/brownish" />
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/lightgray"
+                android:layout_marginTop="1dp"
+                android:layout_marginBottom="1dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:padding="8dp">
+
+                <!-- First line: New in bold -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="New"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:paddingBottom="0dp"/>
+
+                <!-- Second line: dp, text, images -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+
+                    <!-- Profile dp -->
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/dp"
+                        android:layout_marginRight="8dp"/>
+
+                    <!-- Notification text -->
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/you1"
+                        android:textSize="17sp"
+                        android:textColor="@color/black"/>
+
+
+                    <!-- Post thumbnails -->
+                    <ImageView
+                        android:layout_width="65dp"
+                        android:layout_height="65dp"
+                        android:src="@drawable/squareimage1"
+                        android:layout_marginRight="5dp"/>
+
+
+                </LinearLayout>
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/lightgray"
+                android:layout_marginTop="-1dp"
+                android:layout_marginBottom="1dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="-10dp"
+                android:layout_marginTop="-10dp"
+                android:padding="8dp">
+
+                <!-- First line: New in bold -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Today"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:paddingBottom="4dp"/>
+
+                <!-- Second line: DP, text, post image -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+
+                    <!-- Profile DP -->
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/dp"
+                        android:layout_marginEnd="8dp"/>
+
+                    <!-- Notification text -->
+                    <TextView
+                        android:layout_width="170dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/you2"
+                        android:textSize="16sp"
+                        android:textColor="@color/black"
+                        android:scrollHorizontally="false"/>
+
+
+                    <!-- Right-side post image -->
+                    <ImageView
+                        android:layout_width="65dp"
+                        android:layout_height="65dp"
+                        android:src="@drawable/squareimage1"/>
+                </LinearLayout>
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/lightgray"
+                android:layout_marginTop="-1dp"
+                android:layout_marginBottom="1dp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="-10dp"
+                android:padding="8dp">
+
+                <!-- First line: Today in bold -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="This Week"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:paddingBottom="4dp"/>
+
+                <!-- Second line: DP, text, post image -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+
+                    <!-- Profile DP -->
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/dp"
+                        android:layout_marginEnd="8dp"/>
+
+                    <!-- Notification text -->
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/you3"
+                        android:textSize="16dp"
+                        android:textColor="@color/black"
+                        android:scrollHorizontally="false"/>
+
+                    <!-- Right-side post image -->
+                    <ImageView
+                        android:layout_width="65dp"
+                        android:layout_height="65dp"
+                        android:src="@drawable/squareimage1"/>
+                </LinearLayout>
+
+                <!-- Third line: DP, text, heart + Reply -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_marginTop="-5dp">
+
+                    <!-- Heart icon -->
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/like"
+                        android:layout_marginStart="40dp"
+                        android:layout_marginEnd="10dp"/>
+
+                    <!-- Reply text in gray -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Reply"
+                        android:textColor="@color/grey"
+                        android:textSize="14sp"/>
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginTop="-10dp"
+                android:padding="8dp">
+
+                <!-- Profile DP -->
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/dp"
+                    android:layout_marginEnd="8dp"/>
+
+                <!-- Notification text -->
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/you4"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"/>
+
+                <!-- Message button -->
+                <Button
+                    android:textAllCaps="false"
+                    android:layout_width="120dp"
+                    android:layout_height="40dp"
+                    android:textStyle="bold"
+                    android:background="@drawable/simplebutton"
+                    android:text="Message"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:padding="8dp">
+
+                <!-- Profile DP -->
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/dp"
+                    android:layout_marginEnd="8dp"/>
+
+                <!-- Notification text -->
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/you5"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"/>
+
+                <!-- Message button -->
+                <Button
+                    android:textAllCaps="false"
+                    android:layout_width="120dp"
+                    android:layout_height="40dp"
+                    android:textStyle="bold"
+                    android:background="@drawable/simplebutton"
+                    android:text="Message"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:padding="8dp">
+
+                <!-- Profile DP -->
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/dp"
+                    android:layout_marginEnd="8dp"/>
+
+                <!-- Notification text -->
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/you6"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"/>
+
+                <!-- Message button -->
+                <Button
+                    android:textAllCaps="false"
+                    android:layout_width="120dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/brownbutton"
+                    android:text="Follow"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"/>
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/lightgray"
+                android:layout_marginTop="-1dp"
+                android:layout_marginBottom="1dp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="-5dp"
+                android:layout_marginBottom="10dp"
+                android:padding="8dp">
+
+                <!-- First line: New in bold -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="This Month"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:paddingBottom="0dp"/>
+
+                <!-- Second line: dp, text, images -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+
+                    <!-- Profile dp -->
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/dp"
+                        android:layout_marginRight="8dp"/>
+
+                    <!-- Notification text -->
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/you7"
+                        android:textSize="17sp"
+                        android:textColor="@color/black"
+                        android:paddingEnd="5dp"
+                        android:scrollHorizontally="false"/>
+
+
+                    <!-- Message button -->
+                    <Button
+                        android:textAllCaps="false"
+                        android:layout_width="120dp"
+                        android:layout_height="40dp"
+                        android:textStyle="bold"
+                        android:background="@drawable/simplebutton"
+                        android:text="Message"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"/>
+
+
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="-5dp"
+                android:layout_marginBottom="10dp"
+                android:padding="8dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="-10dp"
+                    android:gravity="center_vertical">
+
+                    <!-- Profile dp -->
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/dp"
+                        android:layout_marginRight="8dp"/>
+
+                    <!-- Notification text -->
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/you8"
+                        android:textSize="17sp"
+                        android:textColor="@color/black"
+                        android:paddingEnd="5dp"
+                        android:scrollHorizontally="false"/>
+
+                    <!-- Message button -->
+                    <Button
+                        android:textAllCaps="false"
+                        android:layout_width="120dp"
+                        android:layout_height="40dp"
+                        android:textStyle="bold"
+                        android:background="@drawable/simplebutton"
+                        android:text="Message"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"/>
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/bottom_bar"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/pgelevenbottombar">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="30dp"
+            android:layout_height="35dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="3dp"
+            android:layout_marginRight="26dp"
+            android:src="@drawable/dp" />
+
+        <ImageView
+            android:layout_width="500dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/home_indicatorpg1"
+            android:layout_alignParentBottom="true"
+            android:layout_centerInParent="true" />
+    </RelativeLayout>
+
+</RelativeLayout>

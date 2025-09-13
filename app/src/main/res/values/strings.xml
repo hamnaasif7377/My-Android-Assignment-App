@@ -18,4 +18,16 @@
     <string name="not6"><b>maxjocobson</b> and <b>craig_love</b> liked <b>martini_rond</b> post · 3h</string>
     <string name="not7"><b>karennne</b> liked <b>martini_rond</b> comment: <b>@martini_rond</b> Nice! · 3h</string>
     <string name="not8"><b>maxjocobson</b> liked 3 posts · 3h</string>
+
+    <!--Notifications for you -->
+    <string name="you1"><b>karennne</b> liked your photo·   1h</string>
+    <string name="you2"><b>kiero_d, zackjohn</b> and <b>26 others</b> liked your photo   · 3h</string>
+    <string name="you3"><b>craig_love</b> mentioned you in a comment: <b>@jacob_w </b> exactly.. 💫2d</string>
+    <string name="you4"><b>martini_rond</b> started following you·   3d</string>
+    <string name="you5"><b>maxjanson</b> started following you·   3d</string>
+    <string name="you6"><b>mis_potter</b> started following you·   3d</string>
+    <string name="you7"><b>zackjohn</b> started following you·   4w</string>
+    <string name="you8"><b>kiero</b> started following you·   5w</string>
+
+
 </resources>
