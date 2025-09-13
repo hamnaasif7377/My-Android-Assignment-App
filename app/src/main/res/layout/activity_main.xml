@@ -60,7 +60,6 @@
             android:layout_alignParentBottom="true"
             android:layout_marginBottom="100dp"
             android:layout_marginLeft="45dp"
-            android:background="@drawable/settings"
             android:scaleType="centerCrop"
             android:clipToOutline="true"/>
         <ImageView
@@ -84,11 +83,10 @@
         <ImageView
             android:layout_width="30dp"
             android:layout_height="30dp"
-            android:src="@drawable/settings"
+            android:src="@drawable/sync"
             android:layout_alignParentBottom="true"
             android:layout_marginBottom="100dp"
             android:layout_marginLeft="265dp"
-            android:background="@drawable/settings"
             android:scaleType="centerCrop"
             android:clipToOutline="true"/>
         <ImageView

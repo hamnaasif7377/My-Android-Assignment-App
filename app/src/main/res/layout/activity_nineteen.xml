@@ -37,7 +37,7 @@
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:src="@drawable/storyicons"
+            android:src="@drawable/story_icons"
             android:adjustViewBounds="true"
             android:layout_alignParentTop="true">
         </ImageView>

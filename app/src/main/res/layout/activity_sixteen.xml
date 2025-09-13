@@ -1,0 +1,174 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".twelve">
+
+    <!-- Status bar -->
+    <ImageView
+        android:id="@+id/status_bar"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/status_bar1"
+        android:layout_alignParentTop="true" />
+
+    <ImageView
+        android:id="@+id/clear_icon"
+        android:layout_width="20dp"
+        android:layout_height="24dp"
+        android:src="@drawable/dropdown"
+        android:layout_marginTop="53dp"
+        android:layout_marginLeft="245dp" />
+
+    <!-- Top row -->
+    <LinearLayout
+        android:id="@+id/follow_you_row"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/status_bar"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/btn_cancel"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
+            android:gravity="center_vertical"
+            android:text="Cancel"
+            android:textSize="18sp"
+            android:textColor="@color/brownish" />
+
+        <TextView
+            android:id="@+id/btn_recents"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:text="Recents"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor="@color/brownish" />
+
+        <TextView
+            android:id="@+id/btn_next"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:text="Next"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor="@color/brownish" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp">
+
+        <!-- Main Image -->
+        <ImageView
+            android:id="@+id/main_picture"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/image5"
+            android:layout_marginTop="80dp" />
+
+        <!-- Icons + Text Row -->
+        <LinearLayout
+            android:id="@+id/icons_row"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/main_picture"
+            android:layout_alignParentRight="true"
+            android:orientation="horizontal"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="10dp">
+
+            <!-- i1 with white background -->
+            <ImageView
+                android:id="@+id/i1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/translucentgraybutton"
+                android:padding="6dp"
+                android:src="@drawable/camera"
+                android:layout_marginRight="8dp" />
+
+            <!-- i2 with purple background -->
+            <ImageView
+                android:id="@+id/i2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/translucentgraybutton"
+                android:padding="6dp"
+                android:src="@drawable/camera"
+                android:layout_marginRight="8dp" />
+
+            <!-- Group for i3 + text with gray background -->
+            <LinearLayout
+                android:id="@+id/i3_text_container"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@drawable/translucentgraybutton"
+                android:padding="6dp">
+
+                <ImageView
+                    android:id="@+id/i3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/camera"
+                    android:layout_marginRight="6dp" />
+
+                <TextView
+                    android:id="@+id/select_multiple_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="SELECT MULTIPLE"
+                    android:textSize="14sp"
+                    android:textColor="@color/white"
+                    android:layout_gravity="center_vertical" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+
+
+
+    <!-- Bottom bar -->
+    <RelativeLayout
+        android:id="@+id/bottom_bar"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/pgelevenbottombar">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="30dp"
+            android:layout_height="35dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="3dp"
+            android:layout_marginRight="26dp"
+            android:src="@drawable/dp" />
+
+        <ImageView
+            android:layout_width="500dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/home_indicatorpg1"
+            android:layout_alignParentBottom="true"
+            android:layout_centerInParent="true" />
+    </RelativeLayout>
+
+</RelativeLayout>
