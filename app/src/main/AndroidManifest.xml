@@ -21,7 +21,7 @@
             android:name=".eleventh"
             android:exported="false" />
         <activity
-            android:name=".fifth"
+            android:name=".Fifth"
             android:exported="false" />
         <activity
             android:name=".sixth"
@@ -66,10 +66,10 @@
             android:name=".tenth"
             android:exported="false" />
         <activity
-            android:name=".fourth"
+            android:name=".Fourth"
             android:exported="false" />
         <activity
-            android:name=".third"
+            android:name=".Third"
             android:exported="false" />
         <activity
             android:name=".Second"

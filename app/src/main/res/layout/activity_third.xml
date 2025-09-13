@@ -44,6 +44,7 @@
         android:textSize="16sp"
         android:textColor="@color/black"
         android:layout_below="@id/profile_image"
+        tools:context=".third"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="10dp" />
 
@@ -93,6 +94,7 @@
         </TextView>
 
         <TextView
+            android:id="@+id/signup_text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Sign up."

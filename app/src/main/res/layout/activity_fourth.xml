@@ -54,8 +54,8 @@
         android:layout_height="50dp"
         android:background="@drawable/inputbox"
         android:padding="12dp"
-        android:text="asad_khasanov"
-        android:textColor="@color/dark_grey"
+        android:hint="asad_khasanov"
+        android:textColorHint="@color/dark_grey"
         android:layout_below="@id/socially"
         android:layout_marginLeft="10dp"
         android:layout_marginBottom="5dp"
@@ -68,14 +68,16 @@
         android:layout_height="50dp"
         android:background="@drawable/inputbox"
         android:padding="10dp"
-        android:text="Password"
+        android:hint="Password"
         android:layout_below="@id/username"
         android:layout_marginLeft="10dp"
         android:layout_marginBottom="5dp"
         android:layout_marginTop="20dp"
-        android:textColor="@color/lightgray">
+        android:textColorHint="@color/lightgray"
+        >
 
-    </EditText>
+
+</EditText>
 
     <TextView
         android:id="@+id/forgot_password"
