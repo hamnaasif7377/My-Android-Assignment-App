@@ -46,5 +46,4 @@ dependencies {
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
     implementation("de.hdodenhof:circleimageview:3.1.0")
-    implementation("androidx.cardview:cardview:1.0.0")
 }

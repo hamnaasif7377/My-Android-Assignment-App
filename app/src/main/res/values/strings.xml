@@ -1,8 +1,21 @@
 <resources>
     <string name="app_name">hamna app task</string>
-    <string name="post_caption"><b>kyan.coleman</b> The game in japan was amazing and I want to share some photos</string>
-    <string name="likedby_caption">Liked by <b>craig_love</b> and <b>44,686 others</b></string>
-    <string name="likedby_caption2">Liked by <b>karennne</b> and <b>44,686 others</b></string>
+
+    <!-- Post captions -->
+    <string name="post_caption"><b>kyan.coleman</b> The game in Japan was amazing and I want to share some photos</string>
     <string name="post_caption2"><b>craig_love</b> Code is like humor. When you have to explain it, it is bad</string>
 
+    <!-- Likes captions -->
+    <string name="likedby_caption">Liked by <b>craig_love</b> and <b>44,686 others</b></string>
+    <string name="likedby_caption2">Liked by <b>karennne</b> and <b>44,686 others</b></string>
+
+    <!-- Notifications -->
+    <string name="not1"><b>karennne</b> liked 3 posts · 3h</string>
+    <string name="not2"><b>kiero_d, zackjohn</b> and <b>craig_love</b> liked <b>joshua_l</b> photo · 3h</string>
+    <string name="not3"><b>kiero_d</b> started following <b>craig_love</b> · 3h</string>
+    <string name="not4"><b>craig_love</b> liked 8 posts · 3h</string>
+    <string name="not5"><b>maxjocobson</b> and <b>zackjohn</b> liked <b>mis_potter</b> post · 3h</string>
+    <string name="not6"><b>maxjocobson</b> and <b>craig_love</b> liked <b>martini_rond</b> post · 3h</string>
+    <string name="not7"><b>karennne</b> liked <b>martini_rond</b> comment: <b>@martini_rond</b> Nice! · 3h</string>
+    <string name="not8"><b>maxjocobson</b> liked 3 posts · 3h</string>
 </resources>

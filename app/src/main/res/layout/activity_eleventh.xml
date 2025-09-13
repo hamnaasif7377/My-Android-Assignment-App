@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
@@ -10,7 +11,7 @@
     <ImageView
         android:id="@+id/status_bar"
         android:layout_width="match_parent"
-        android:layout_height="50dp"
+        android:layout_height="40dp"
         android:scaleType="centerCrop"
         android:src="@drawable/status_bar1"
         android:layout_alignParentTop="true" />
@@ -31,7 +32,7 @@
             android:gravity="center"
             android:text="Following"
             android:textStyle="bold"
-            android:textSize="20sp"
+            android:textSize="18sp"
             android:textColor="@color/brownish" />
 
         <TextView
@@ -42,7 +43,7 @@
             android:gravity="center"
             android:text="You"
             android:textStyle="bold"
-            android:textSize="20sp"
+            android:textSize="18sp"
             android:textColor="@color/brownish"/>
     </LinearLayout>
 
@@ -51,14 +52,14 @@
         android:layout_width="230dp"
         android:layout_height="10dp"
         android:layout_marginLeft="-20dp"
-        android:layout_marginTop="90dp"
+        android:layout_marginTop="78dp"
         android:src="@drawable/blackunderline" />
 
     <ImageView
         android:layout_width="230dp"
         android:layout_height="10dp"
         android:layout_marginLeft="200dp"
-        android:layout_marginTop="90dp"
+        android:layout_marginTop="78dp"
         android:src="@drawable/grayunderline" />
 
     <!-- Scrollable Content -->
@@ -67,6 +68,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_below="@id/follow_you_row"
+        android:layout_marginTop="-10dp"
         android:layout_above="@id/bottom_bar">
 
         <LinearLayout
@@ -80,8 +82,7 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:padding="8dp">
+                android:orientation="horizontal">
 
                 <ImageView
                     android:layout_width="40dp"
@@ -98,62 +99,72 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="karennne liked 3 posts. 3h"
+                        android:text="@string/not1"
                         android:textSize="14sp"
+                        android:paddingBottom="5dp"
                         android:textColor="@color/black" />
 
                     <LinearLayout
                         android:orientation="horizontal"
                         android:layout_width="wrap_content"
+                        android:layout_marginBottom="10dp"
                         android:layout_height="wrap_content">
 
                         <ImageView
-                            android:layout_width="60dp"
-                            android:layout_height="60dp"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
                             android:src="@drawable/squareimage1"
                             android:layout_marginRight="5dp"/>
 
                         <ImageView
-                            android:layout_width="60dp"
-                            android:layout_height="60dp"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
                             android:src="@drawable/squareimage2"
                             android:layout_marginRight="5dp"/>
-                        <ImageView android:layout_width="60dp"
-                            android:layout_height="60dp"
+
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
                             android:src="@drawable/squareimage3"/>
                     </LinearLayout>
                 </LinearLayout>
             </LinearLayout>
 
             <!-- 2. kiero_d, zackjohn, craig_love liked joshua_l photo -->
-            <LinearLayout android:layout_width="match_parent"
+            <LinearLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:padding="8dp">
+                android:orientation="horizontal">
+
+                <!-- Profile DP -->
                 <ImageView
                     android:layout_width="40dp"
                     android:layout_height="40dp"
                     android:src="@drawable/dp"
                     android:layout_marginRight="8dp"/>
 
+                <!-- Text in the middle -->
                 <TextView
-                    android:layout_width="wrap_content"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:text="kiero_d, zackjohn and craig_love liked joshua_l photo. 3h" android:textSize="14sp" android:textColor="@color/black"/>
+                    android:layout_weight="1"
+                    android:text="@string/not2"
+                    android:textSize="14sp"
+                    android:textColor="@color/black"/>
 
+                <!-- Right-side post image -->
                 <ImageView
                     android:layout_width="60dp"
                     android:layout_height="60dp"
-                    android:src="@drawable/squareimage4"
-                    android:layout_marginLeft="8dp"/>
+                    android:src="@drawable/squareimage1"/>
             </LinearLayout>
+
 
             <!-- 3. kiero_d started following craig_love -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:padding="8dp">
+                android:orientation="horizontal">
 
                 <ImageView
                     android:layout_width="40dp"
@@ -164,145 +175,197 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="kiero_d started following craig_love. 3h"
+                    android:text="@string/not3"
                     android:textSize="14sp"
                     android:textColor="@color/black"/>
             </LinearLayout>
 
-            <!-- 4. craig_love liked 8 posts -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:padding="8dp">
+                android:orientation="horizontal">
+
+                <!-- Profile DP -->
                 <ImageView
                     android:layout_width="40dp"
                     android:layout_height="40dp"
                     android:src="@drawable/dp"
                     android:layout_marginRight="8dp"/>
+
+                <!-- Right side (text + grid of images) -->
                 <LinearLayout
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:orientation="vertical">
+
+                    <!-- Caption -->
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="craig_love liked 8 posts. 3h"
+                        android:text="@string/not4"
                         android:textSize="14sp"
                         android:textColor="@color/black"/>
-                    <LinearLayout
-                        android:orientation="horizontal"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content">
+
+                    <GridLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:columnCount="6"
+                        android:layout_marginTop="5dp">
+
+                        <!-- First row: 6 images -->
                         <ImageView
-                            android:layout_width="60dp"
-                            android:layout_height="60dp"
-                            android:src="@drawable/squareimage5"
-                            android:layout_marginRight="5dp"/>
-                        <ImageView
-                            android:layout_width="60dp"
-                            android:layout_height="60dp"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_columnWeight="1"
+                            android:adjustViewBounds="true"
                             android:src="@drawable/squareimage6"
-                            android:layout_marginRight="5dp"/>
+                            android:layout_margin="2dp"/>
+
                         <ImageView
-                            android:layout_width="60dp"
-                            android:layout_height="60dp"
-                            android:src="@drawable/squareimage7"
-                            android:layout_marginRight="5dp"/>
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_columnWeight="1"
+                            android:adjustViewBounds="true"
+                            android:src="@drawable/squareimage6"
+                            android:layout_margin="2dp"/>
+
                         <ImageView
-                            android:layout_width="60dp"
-                            android:layout_height="60dp"
-                            android:src="@drawable/squareimage8"
-                            android:layout_marginRight="5dp"/>
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_columnWeight="1"
+                            android:adjustViewBounds="true"
+                            android:src="@drawable/squareimage6"
+                            android:layout_margin="2dp"/>
+
                         <ImageView
-                            android:layout_width="60dp"
-                            android:layout_height="60dp"
-                            android:src="@drawable/squareimage9"
-                            android:layout_marginRight="5dp"/>
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_columnWeight="1"
+                            android:adjustViewBounds="true"
+                            android:src="@drawable/squareimage6"
+                            android:layout_margin="2dp"/>
+
                         <ImageView
-                            android:layout_width="60dp"
-                            android:layout_height="60dp"
-                            android:src="@drawable/squareimage10"
-                            android:layout_marginRight="5dp"/>
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_columnWeight="1"
+                            android:adjustViewBounds="true"
+                            android:src="@drawable/squareimage6"
+                            android:layout_margin="2dp"/>
+
                         <ImageView
-                            android:layout_width="60dp"
-                            android:layout_height="60dp"
-                            android:src="@drawable/squareimage10"
-                            android:layout_marginRight="5dp"/>
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_columnWeight="1"
+                            android:adjustViewBounds="true"
+                            android:src="@drawable/squareimage6"
+                            android:layout_margin="2dp"/>
+
+                        <!-- Second row: 2 images -->
                         <ImageView
-                            android:layout_width="60dp"
-                            android:layout_height="60dp"
-                            android:src="@drawable/squareimage11"/>
-                    </LinearLayout>
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_columnWeight="1"
+                            android:adjustViewBounds="true"
+                            android:src="@drawable/squareimage6"
+                            android:layout_margin="2dp"/>
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_columnWeight="1"
+                            android:adjustViewBounds="true"
+                            android:src="@drawable/squareimage6"
+                            android:layout_margin="2dp"/>
+                    </GridLayout>
                 </LinearLayout>
             </LinearLayout>
+
+
 
             <!-- 5. maxjacobson and zackjohn liked mis_potter post -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:padding="8dp">
+                android:orientation="horizontal">
+
+                <!-- Profile DP -->
                 <ImageView
                     android:layout_width="40dp"
                     android:layout_height="40dp"
                     android:src="@drawable/dp"
                     android:layout_marginRight="8dp"/>
+
+                <!-- Text in the middle -->
                 <TextView
-                    android:layout_width="wrap_content"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:text="maxjacobson and zackjohn liked mis_potter's post. 3h" android:textSize="14sp" android:textColor="@color/black"/>
+                    android:layout_weight="1"
+                    android:text="@string/not5"
+                    android:textSize="14sp"
+                    android:textColor="@color/black"/>
+
+                <!-- Right-side post image -->
                 <ImageView
                     android:layout_width="60dp"
                     android:layout_height="60dp"
-                    android:src="@drawable/squareimage12"
-                    android:layout_marginLeft="8dp"/>
+                    android:src="@drawable/squareimage1"/>
             </LinearLayout>
 
             <!-- 6. maxjacobson and craig_love liked martini_rond post -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:padding="8dp">
+                android:orientation="horizontal">
+
+                <!-- Profile DP -->
                 <ImageView
                     android:layout_width="40dp"
                     android:layout_height="40dp"
                     android:src="@drawable/dp"
                     android:layout_marginRight="8dp"/>
+
+                <!-- Text in the middle -->
                 <TextView
-                    android:layout_width="wrap_content"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:text="maxjacobson and craig_love liked martini_rond's post. 3h" android:textSize="14sp" android:textColor="@color/black"/>
+                    android:layout_weight="1"
+                    android:text="@string/not6"
+                    android:textSize="14sp"
+                    android:textColor="@color/black"/>
+
+                <!-- Right-side post image -->
                 <ImageView
                     android:layout_width="60dp"
                     android:layout_height="60dp"
-                    android:src="@drawable/squareimage13"
-                    android:layout_marginLeft="8dp"/>
+                    android:src="@drawable/squareimage1"/>
             </LinearLayout>
 
             <!-- 7. karennne liked martini_rond's comment -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal" android:padding="8dp">
+                android:orientation="horizontal">
+
                 <ImageView
                     android:layout_width="40dp"
                     android:layout_height="40dp"
                     android:src="@drawable/dp"
                     android:layout_marginRight="8dp"/>
+
                 <TextView
-                    android:layout_width="wrap_content"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:text="karennne liked martini_rond’s comment. 3h"
+                    android:layout_weight="1"
+                    android:text="@string/not7"
                     android:textSize="14sp"
                     android:textColor="@color/black"/>
+
                 <ImageView
                     android:layout_width="60dp"
                     android:layout_height="60dp"
-                    android:src="@drawable/squareimage1"
-                    android:layout_marginLeft="8dp"/>
+                    android:src="@drawable/squareimage1"/>
             </LinearLayout>
 
             <!-- 8. maxjacobson liked 3 posts -->
@@ -324,7 +387,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="maxjacobson liked 3 posts. 3h"
+                        android:text="@string/not8"
                         android:textSize="14sp"
                         android:textColor="@color/black"/>
                     <LinearLayout
