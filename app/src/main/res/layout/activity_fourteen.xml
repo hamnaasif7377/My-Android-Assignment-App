@@ -139,6 +139,7 @@
             android:layout_marginTop="46dp">
         </ImageView>
         <ImageView
+            android:id="@+id/back"
             android:layout_width="30dp"
             android:layout_height="40dp"
             android:src="@drawable/close"

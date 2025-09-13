@@ -53,7 +53,7 @@
         android:layout_height="10dp"
         android:layout_marginLeft="-20dp"
         android:layout_marginTop="78dp"
-        android:src="@drawable/blackunderline" />
+        android:src="@drawable/brownunderline" />
 
     <ImageView
         android:layout_width="230dp"
@@ -100,7 +100,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/not1"
-                        android:textSize="14sp"
+                        android:textSize="16sp"
                         android:paddingBottom="5dp"
                         android:textColor="@color/black" />
 
@@ -111,20 +111,20 @@
                         android:layout_height="wrap_content">
 
                         <ImageView
-                            android:layout_width="40dp"
-                            android:layout_height="40dp"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
                             android:src="@drawable/squareimage1"
                             android:layout_marginRight="5dp"/>
 
                         <ImageView
-                            android:layout_width="40dp"
-                            android:layout_height="40dp"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
                             android:src="@drawable/squareimage2"
                             android:layout_marginRight="5dp"/>
 
                         <ImageView
-                            android:layout_width="40dp"
-                            android:layout_height="40dp"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
                             android:src="@drawable/squareimage3"/>
                     </LinearLayout>
                 </LinearLayout>
@@ -134,13 +134,14 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:paddingBottom="10dp"
                 android:orientation="horizontal">
 
                 <!-- Profile DP -->
                 <ImageView
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
-                    android:src="@drawable/dp"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/grp"
                     android:layout_marginRight="8dp"/>
 
                 <!-- Text in the middle -->
@@ -149,14 +150,14 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="@string/not2"
-                    android:textSize="14sp"
+                    android:textSize="16sp"
                     android:textColor="@color/black"/>
 
                 <!-- Right-side post image -->
                 <ImageView
                     android:layout_width="60dp"
                     android:layout_height="60dp"
-                    android:src="@drawable/squareimage1"/>
+                    android:src="@drawable/squareimage13"/>
             </LinearLayout>
 
 
@@ -164,35 +165,35 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:paddingBottom="10dp"
                 android:orientation="horizontal">
 
                 <ImageView
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
-                    android:src="@drawable/dp"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/kiero"
                     android:layout_marginRight="8dp"/>
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/not3"
-                    android:textSize="14sp"
+                    android:textSize="16sp"
                     android:textColor="@color/black"/>
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:paddingBottom="10dp"
                 android:orientation="horizontal">
 
-                <!-- Profile DP -->
                 <ImageView
                     android:layout_width="40dp"
                     android:layout_height="40dp"
-                    android:src="@drawable/dp"
+                    android:src="@drawable/craig_dp"
                     android:layout_marginRight="8dp"/>
 
-                <!-- Right side (text + grid of images) -->
                 <LinearLayout
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
@@ -204,7 +205,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/not4"
-                        android:textSize="14sp"
+                        android:textSize="16sp"
                         android:textColor="@color/black"/>
 
                     <GridLayout
@@ -219,7 +220,7 @@
                             android:layout_height="wrap_content"
                             android:layout_columnWeight="1"
                             android:adjustViewBounds="true"
-                            android:src="@drawable/squareimage6"
+                            android:src="@drawable/post1"
                             android:layout_margin="2dp"/>
 
                         <ImageView
@@ -227,7 +228,7 @@
                             android:layout_height="wrap_content"
                             android:layout_columnWeight="1"
                             android:adjustViewBounds="true"
-                            android:src="@drawable/squareimage6"
+                            android:src="@drawable/post2"
                             android:layout_margin="2dp"/>
 
                         <ImageView
@@ -235,7 +236,7 @@
                             android:layout_height="wrap_content"
                             android:layout_columnWeight="1"
                             android:adjustViewBounds="true"
-                            android:src="@drawable/squareimage6"
+                            android:src="@drawable/post3"
                             android:layout_margin="2dp"/>
 
                         <ImageView
@@ -243,7 +244,7 @@
                             android:layout_height="wrap_content"
                             android:layout_columnWeight="1"
                             android:adjustViewBounds="true"
-                            android:src="@drawable/squareimage6"
+                            android:src="@drawable/post4"
                             android:layout_margin="2dp"/>
 
                         <ImageView
@@ -251,7 +252,7 @@
                             android:layout_height="wrap_content"
                             android:layout_columnWeight="1"
                             android:adjustViewBounds="true"
-                            android:src="@drawable/squareimage6"
+                            android:src="@drawable/post5"
                             android:layout_margin="2dp"/>
 
                         <ImageView
@@ -259,16 +260,7 @@
                             android:layout_height="wrap_content"
                             android:layout_columnWeight="1"
                             android:adjustViewBounds="true"
-                            android:src="@drawable/squareimage6"
-                            android:layout_margin="2dp"/>
-
-                        <!-- Second row: 2 images -->
-                        <ImageView
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
-                            android:layout_columnWeight="1"
-                            android:adjustViewBounds="true"
-                            android:src="@drawable/squareimage6"
+                            android:src="@drawable/post6"
                             android:layout_margin="2dp"/>
 
                         <ImageView
@@ -276,7 +268,15 @@
                             android:layout_height="wrap_content"
                             android:layout_columnWeight="1"
                             android:adjustViewBounds="true"
-                            android:src="@drawable/squareimage6"
+                            android:src="@drawable/post7"
+                            android:layout_margin="2dp"/>
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_columnWeight="1"
+                            android:adjustViewBounds="true"
+                            android:src="@drawable/post8"
                             android:layout_margin="2dp"/>
                     </GridLayout>
                 </LinearLayout>
@@ -288,13 +288,14 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:paddingBottom="10dp"
                 android:orientation="horizontal">
 
                 <!-- Profile DP -->
                 <ImageView
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
-                    android:src="@drawable/dp"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/grp"
                     android:layout_marginRight="8dp"/>
 
                 <!-- Text in the middle -->
@@ -303,7 +304,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="@string/not5"
-                    android:textSize="14sp"
+                    android:textSize="16sp"
                     android:textColor="@color/black"/>
 
                 <!-- Right-side post image -->
@@ -317,13 +318,13 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:paddingBottom="10dp"
                 android:orientation="horizontal">
 
-                <!-- Profile DP -->
                 <ImageView
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
-                    android:src="@drawable/dp"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/grp"
                     android:layout_marginRight="8dp"/>
 
                 <!-- Text in the middle -->
@@ -332,26 +333,27 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="@string/not6"
-                    android:textSize="14sp"
+                    android:textSize="16sp"
                     android:textColor="@color/black"/>
 
                 <!-- Right-side post image -->
                 <ImageView
                     android:layout_width="60dp"
                     android:layout_height="60dp"
-                    android:src="@drawable/squareimage1"/>
+                    android:src="@drawable/squareimage4"/>
             </LinearLayout>
 
             <!-- 7. karennne liked martini_rond's comment -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:paddingBottom="3dp"
                 android:orientation="horizontal">
 
                 <ImageView
                     android:layout_width="40dp"
                     android:layout_height="40dp"
-                    android:src="@drawable/dp"
+                    android:src="@drawable/karennne"
                     android:layout_marginRight="8dp"/>
 
                 <TextView
@@ -359,13 +361,13 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="@string/not7"
-                    android:textSize="14sp"
+                    android:textSize="16sp"
                     android:textColor="@color/black"/>
 
                 <ImageView
                     android:layout_width="60dp"
                     android:layout_height="60dp"
-                    android:src="@drawable/squareimage1"/>
+                    android:src="@drawable/squareimage5"/>
             </LinearLayout>
 
             <!-- 8. maxjacobson liked 3 posts -->
@@ -377,7 +379,7 @@
                 <ImageView
                     android:layout_width="40dp"
                     android:layout_height="40dp"
-                    android:src="@drawable/dp"
+                    android:src="@drawable/maxjac"
                     android:layout_marginRight="8dp"/>
                 <LinearLayout
                     android:layout_width="0dp"
@@ -388,7 +390,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/not8"
-                        android:textSize="14sp"
+                        android:textSize="16sp"
                         android:textColor="@color/black"/>
                     <LinearLayout
                         android:orientation="horizontal"
@@ -397,17 +399,17 @@
                         <ImageView
                             android:layout_width="60dp"
                             android:layout_height="60dp"
-                            android:src="@drawable/squareimage1"
+                            android:src="@drawable/squareimage6"
                             android:layout_marginRight="5dp"/>
                         <ImageView
                             android:layout_width="60dp"
                             android:layout_height="60dp"
-                            android:src="@drawable/squareimage1"
+                            android:src="@drawable/squareimage7"
                             android:layout_marginRight="5dp"/>
                         <ImageView
                             android:layout_width="60dp"
                             android:layout_height="60dp"
-                            android:src="@drawable/squareimage1"/>
+                            android:src="@drawable/squareimage8"/>
                     </LinearLayout>
                 </LinearLayout>
             </LinearLayout>
@@ -419,17 +421,73 @@
     <RelativeLayout
         android:id="@+id/bottom_bar"
         android:layout_width="match_parent"
-        android:layout_height="70dp"
+        android:layout_height="80dp"
         android:layout_alignParentBottom="true"
         android:background="@drawable/pgelevenbottombar">
 
-        <de.hdodenhof.circleimageview.CircleImageView
-            android:layout_width="30dp"
-            android:layout_height="35dp"
-            android:layout_alignParentEnd="true"
-            android:layout_marginTop="2dp"
-            android:layout_marginRight="26dp"
-            android:src="@drawable/dp" />
+        <!-- 5 equal boxes -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="5">
+
+            <!-- Box 1 -->
+            <LinearLayout
+                android:id="@+id/box1"
+                android:orientation="horizontal"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center">
+
+            </LinearLayout>
+
+            <!-- Box 2 -->
+            <LinearLayout
+                android:id="@+id/box2"
+                android:orientation="horizontal"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center">
+
+            </LinearLayout>
+
+            <!-- Box 3 -->
+            <LinearLayout
+                android:id="@+id/box3"
+                android:orientation="horizontal"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center">
+
+            </LinearLayout>
+
+            <!-- Box 4 -->
+            <LinearLayout
+                android:id="@+id/box4"
+                android:orientation="horizontal"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center">
+
+            </LinearLayout>
+
+            <!-- Box 5 (Profile Image) -->
+            <LinearLayout
+                android:id="@+id/box5"
+                android:orientation="horizontal"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center">
+
+            </LinearLayout>
+
+        </LinearLayout>
 
         <ImageView
             android:layout_width="500dp"
@@ -438,4 +496,6 @@
             android:layout_alignParentBottom="true"
             android:layout_centerInParent="true" />
     </RelativeLayout>
+
+
 </RelativeLayout>

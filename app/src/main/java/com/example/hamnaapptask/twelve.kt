@@ -1,20 +1,39 @@
 package com.example.hamnaapptask
 
+import android.content.Intent
 import android.os.Bundle
-import androidx.activity.enableEdgeToEdge
+import android.widget.LinearLayout
+import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 
 class Twelve : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        enableEdgeToEdge()
         setContentView(R.layout.activity_twelve)
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
-            val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
-            insets
+
+        // 🔹 btnyou → back to Eleventh
+        val btnYou = findViewById<TextView>(R.id.btn_following)
+        btnYou.setOnClickListener {
+            startActivity(Intent(this, Eleventh::class.java))
+            finish() // optional: prevents stacking multiple Elevenths
+        }
+
+        // 🔹 box1 → Fifth
+        val box1 = findViewById<LinearLayout>(R.id.box1)
+        box1.setOnClickListener {
+            startActivity(Intent(this, Fifth::class.java))
+        }
+
+        // 🔹 box2 → Sixth
+        val box2 = findViewById<LinearLayout>(R.id.box2)
+        box2.setOnClickListener {
+            startActivity(Intent(this, Sixth::class.java))
+        }
+
+        // 🔹 box5 → Thirteen
+        val box5 = findViewById<LinearLayout>(R.id.box5)
+        box5.setOnClickListener {
+            startActivity(Intent(this, Thirteen::class.java))
         }
     }
 }
