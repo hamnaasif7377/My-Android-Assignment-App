@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".Thirteen"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:id="@+id/main"
@@ -344,15 +346,71 @@
         android:layout_alignParentBottom="true"
         android:background="@drawable/tab">
 
-        <de.hdodenhof.circleimageview.CircleImageView
-            android:layout_width="30dp"
-            android:layout_height="35dp"
-            android:layout_alignParentEnd="true"
-            android:layout_marginTop="2dp"
-            android:layout_marginRight="26dp"
-            android:src="@drawable/dp">
-        </de.hdodenhof.circleimageview.CircleImageView>
+        <!-- 5 equal boxes -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="5"
+            android:orientation="horizontal">
 
+            <!-- Box 1 -->
+            <LinearLayout
+                android:id="@+id/box1"
+                android:orientation="horizontal"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center">
+
+            </LinearLayout>
+
+            <!-- Box 2 -->
+            <LinearLayout
+                android:id="@+id/box2"
+                android:orientation="horizontal"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center">
+            </LinearLayout>
+
+            <!-- Box 3 -->
+            <LinearLayout
+                android:id="@+id/box3"
+                android:layout_width="0dp"
+                android:orientation="horizontal"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center">
+            </LinearLayout>
+
+            <!-- Box 4 -->
+            <LinearLayout
+                android:id="@+id/box4"
+                android:orientation="horizontal"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center">
+            </LinearLayout>
+=
+            <LinearLayout
+                android:id="@+id/box5"
+                android:orientation="horizontal"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_marginTop="-15dp"
+                    android:src="@drawable/dp" />
+            </LinearLayout>
+
+        </LinearLayout>
 
     </RelativeLayout>
+
 </RelativeLayout>

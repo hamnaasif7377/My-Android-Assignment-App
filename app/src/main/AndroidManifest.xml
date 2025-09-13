@@ -12,58 +12,58 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.HamnaAppTask">
         <activity
-            android:name=".sixteen"
+            android:name=".Sixteen"
             android:exported="false" />
         <activity
             android:name=".twelve"
             android:exported="false" />
         <activity
-            android:name=".eleventh"
+            android:name=".Eleventh"
             android:exported="false" />
         <activity
             android:name=".Fifth"
             android:exported="false" />
         <activity
-            android:name=".sixth"
+            android:name=".Sixth"
             android:exported="false" />
         <activity
-            android:name=".seventeen"
+            android:name=".Seventeen"
             android:exported="false" />
         <activity
-            android:name=".thirteen"
+            android:name=".Thirteen"
             android:exported="false" />
         <activity
-            android:name=".twentytwo"
+            android:name=".Twentytwo"
             android:exported="false" />
         <activity
-            android:name=".twentyone"
+            android:name=".Twentyone"
             android:exported="false" />
         <activity
-            android:name=".eighth"
+            android:name=".Eighth"
             android:exported="false" />
         <activity
-            android:name=".seventh"
+            android:name=".Seventh"
             android:exported="false" />
         <activity
-            android:name=".ninth"
+            android:name=".Ninth"
             android:exported="false" />
         <activity
-            android:name=".fifteen"
+            android:name=".Fifteen"
             android:exported="false" />
         <activity
-            android:name=".fourteen"
+            android:name=".Fourteen"
             android:exported="false" />
         <activity
-            android:name=".nineteen"
+            android:name=".Nineteen"
             android:exported="false" />
         <activity
-            android:name=".twenty"
+            android:name=".Twenty"
             android:exported="false" />
         <activity
-            android:name=".eighteenth"
+            android:name=".Eighteenth"
             android:exported="false" />
         <activity
-            android:name=".tenth"
+            android:name=".Tenth"
             android:exported="false" />
         <activity
             android:name=".Fourth"
