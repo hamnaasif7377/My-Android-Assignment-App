@@ -21,7 +21,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Socially"
-        android:textSize="70sp"
+        android:textSize="60sp"
         android:textColor="@color/brownish"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="190dp">
@@ -49,13 +49,14 @@
 
 
     <Button
+        android:textAllCaps="false"
         android:id="@+id/login_button"
         android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:text="Log in"
         android:textSize="16sp"
         android:textColor="@color/white"
-        android:backgroundTint="@color/brownish"
+        android:background="@drawable/brownbutton"
         android:layout_below="@id/username"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp" />
@@ -78,7 +79,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="30dp"
+        android:layout_marginBottom="60dp"
         android:orientation="horizontal">
 
 
@@ -100,6 +101,12 @@
             android:textColor="@color/brownish">
         </TextView>
     </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/lightgray"
+        android:layout_marginTop="640dp"
+        android:layout_marginBottom="1dp"/>
 
     <ImageView
         android:id="@+id/bottom_line"
@@ -110,11 +117,4 @@
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="10dp"/>
 
-    <ImageView
-        android:id="@+id/thinline"
-        android:layout_width="match_parent"
-        android:layout_height="4dp"
-        android:layout_below="@+id/switch_accounts"
-        android:layout_marginTop="68dp"
-        android:src="@drawable/thinline" />
 </RelativeLayout>

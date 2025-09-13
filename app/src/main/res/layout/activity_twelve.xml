@@ -5,9 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white"
-    tools:context=".eighth">
+    tools:context=".twelve">
 
-    <!-- Status Bar -->
     <ImageView
         android:id="@+id/status_bar"
         android:layout_width="match_parent"
@@ -16,7 +15,6 @@
         android:src="@drawable/status_bar1"
         android:layout_alignParentTop="true" />
 
-    <!-- Row with Following and You -->
     <LinearLayout
         android:id="@+id/follow_you_row"
         android:layout_width="match_parent"
