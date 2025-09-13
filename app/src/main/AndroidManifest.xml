@@ -15,7 +15,7 @@
             android:name=".Sixteen"
             android:exported="false" />
         <activity
-            android:name=".twelve"
+            android:name=".Twelve"
             android:exported="false" />
         <activity
             android:name=".Eleventh"
