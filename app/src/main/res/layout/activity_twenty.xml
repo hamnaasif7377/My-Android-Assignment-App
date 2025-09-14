@@ -8,7 +8,8 @@
     android:id="@+id/main"
     android:weightSum="10"
     android:background="@color/black">
-<RelativeLayout
+    <!--statusbar-->
+    <RelativeLayout
     android:layout_width="match_parent"
     android:layout_height="0dp"
     android:layout_weight="0.75"
@@ -19,8 +20,8 @@
         android:src="@drawable/status_barblack">
     </ImageView>
 </RelativeLayout>
-
-<RelativeLayout
+    <!--main image-->
+    <RelativeLayout
     android:layout_width="match_parent"
     android:layout_height="0dp"
     android:layout_weight="7.75"
@@ -146,9 +147,8 @@
 
     </LinearLayout>
 </RelativeLayout>
-
-
-<RelativeLayout
+    <!--bottom bar-->
+    <RelativeLayout
     android:layout_width="match_parent"
     android:layout_height="0dp"
     android:layout_weight="1.5"

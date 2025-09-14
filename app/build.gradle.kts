@@ -46,4 +46,19 @@ dependencies {
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
     implementation("de.hdodenhof:circleimageview:3.1.0")
+    // AndroidX Test - JUnit
+    androidTestImplementation("androidx.test.ext:junit:1.1.5")
+
+// Espresso Core
+    androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
+
+// JUnit for local unit tests
+    testImplementation("junit:junit:4.13.2")
+
+// AndroidX Test Runner
+    androidTestImplementation("androidx.test:runner:1.5.2")
+
+// AndroidX Test Rules
+    androidTestImplementation("androidx.test:rules:1.5.0")
+
 }

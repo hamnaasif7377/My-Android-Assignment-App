@@ -10,14 +10,13 @@
     tools:context=".Fifteen"
     android:background="@color/white">
 
+
     <ImageView
         android:id="@+id/status_bar"
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:src="@drawable/status_bar1"
         />
-
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
@@ -55,7 +54,6 @@
             android:textStyle="bold"
             android:textSize="19sp" />
     </LinearLayout>
-
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
@@ -83,7 +81,6 @@
             android:layout_marginTop="0dp" />
 
     </RelativeLayout>
-
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
@@ -210,7 +207,6 @@
 
         </LinearLayout>
     </RelativeLayout>
-
     <TextView
         android:id="@+id/switch_professional"
         android:layout_width="match_parent"
@@ -221,7 +217,6 @@
         android:textSize="18dp"
         android:layout_marginLeft="10dp"
         />
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
@@ -318,8 +313,6 @@
         </LinearLayout>
 
     </LinearLayout>
-
-
     <ImageView
         android:layout_width="200dp"
         android:layout_height="5dp"
@@ -328,7 +321,5 @@
         android:layout_marginLeft="100dp"
         >
     </ImageView>
-
-
 
 </LinearLayout>

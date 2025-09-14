@@ -7,14 +7,14 @@
     android:layout_height="match_parent"
     tools:context=".Seventh"
     android:background="@color/white">
-
+    <!--statusbar-->
     <ImageView
         android:id="@+id/status_bar"
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:src="@drawable/status_bar1"
         android:layout_alignParentTop="true" />
-
+    <!--search bar-->
     <RelativeLayout
         android:id="@+id/search_bar"
         android:layout_width="320dp"
@@ -66,7 +66,7 @@
         android:textStyle="bold"
         android:layout_marginTop="70dp"
         android:layout_marginLeft="350dp"/>
-
+    <!--options on top-->
     <LinearLayout
         android:id="@+id/tabs"
         android:layout_width="match_parent"
@@ -121,6 +121,7 @@
         android:src="@drawable/blackunderline">
 
     </ImageView>
+    <!--search list-->
     <LinearLayout
         android:id="@+id/list_section"
         android:layout_width="match_parent"
@@ -331,7 +332,7 @@
         </LinearLayout>
 
     </LinearLayout>
-
+    <!--home indicator-->
     <ImageView
         android:id="@+id/bottom_line"
         android:layout_width="120dp"

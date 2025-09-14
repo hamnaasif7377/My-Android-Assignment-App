@@ -7,6 +7,7 @@
     android:layout_height="match_parent"
     tools:context=".Fourth"
     android:background="@color/white">
+    <!--statusbar-->
     <ImageView
         android:id="@+id/status_bar"
         android:layout_width="999dp"
@@ -14,6 +15,7 @@
         android:src="@drawable/status_bar1"
         android:layout_marginTop="-10dp">
     </ImageView>
+    <!--lines on sides of or-->
     <ImageView
         android:layout_width="160dp"
         android:layout_height="20dp"
@@ -30,6 +32,7 @@
         android:src="@drawable/thinline">
 
     </ImageView>
+    <!--back icon-->
     <ImageView
         android:id="@+id/back"
         android:layout_width="40dp"
@@ -38,6 +41,7 @@
         android:layout_marginTop="40dp">
 
     </ImageView>
+    <!--Socially-->
     <TextView
         android:id="@+id/socially"
         android:layout_width="wrap_content"
@@ -48,6 +52,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="100dp">
     </TextView>
+    <!--username-->
     <EditText
         android:id="@+id/username"
         android:layout_width="390dp"
@@ -61,7 +66,7 @@
         android:layout_marginBottom="5dp"
         android:layout_marginTop="20dp">
     </EditText>
-
+    <!--password-->
     <EditText
         android:id="@+id/password"
         android:layout_width="390dp"
@@ -78,7 +83,7 @@
 
 
 </EditText>
-
+    <!--forget password-->
     <TextView
         android:id="@+id/forgot_password"
         android:layout_width="wrap_content"
@@ -90,7 +95,7 @@
         android:layout_below="@id/password"
         android:layout_marginTop="6dp"
         android:layout_marginRight="20dp"/>
-
+    <!--login button-->
     <Button
         android:id="@+id/login_button"
         android:layout_width="390dp"
@@ -103,7 +108,7 @@
         android:layout_marginBottom="5dp"
         android:layout_marginTop="20dp">
     </Button>
-
+    <!--home indicator-->
     <ImageView
         android:id="@+id/bottom_line"
         android:layout_width="120dp"
@@ -119,7 +124,7 @@
         android:background="@color/lightgray"
         android:layout_alignParentBottom="true"
         android:layout_marginBottom="80dp"/>
-
+    <!--bottom socially-->
     <TextView
         android:id="@+id/bottomsocially"
         android:layout_width="wrap_content"
@@ -144,7 +149,7 @@
         android:layout_centerHorizontal="true"
         android:id="@+id/OR">
     </TextView>
-
+    <!--sign up instruction-->
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

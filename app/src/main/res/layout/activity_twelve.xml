@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@color/white"
     tools:context=".Twelve">
-
+    <!--statusbar-->
     <ImageView
         android:id="@+id/status_bar"
         android:layout_width="match_parent"
@@ -14,7 +14,7 @@
         android:scaleType="centerCrop"
         android:src="@drawable/status_bar1"
         android:layout_alignParentTop="true" />
-
+    <!--options-->
     <LinearLayout
         android:id="@+id/follow_you_row"
         android:layout_width="match_parent"
@@ -58,7 +58,7 @@
         android:layout_marginLeft="200dp"
         android:layout_marginTop="78dp"
         android:src="@drawable/brownunderline" />
-
+    <!--notifications list-->
     <ScrollView
         android:id="@+id/scroll_feed"
         android:layout_width="match_parent"
@@ -421,7 +421,7 @@
 
 
     </ScrollView>
-
+    <!--bottom bar-->
     <RelativeLayout
         android:id="@+id/bottom_bar"
         android:layout_width="match_parent"
@@ -490,7 +490,5 @@
             android:layout_alignParentBottom="true"
             android:layout_centerInParent="true" />
     </RelativeLayout>
-
-
 
 </RelativeLayout>

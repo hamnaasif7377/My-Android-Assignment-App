@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     tools:context=".Third"
     android:background="@color/white">
-
+    <!--statusbar-->
     <ImageView
         android:id="@+id/status_bar"
         android:layout_width="999dp"
@@ -15,7 +15,7 @@
         android:src="@drawable/status_bar1"
         android:layout_marginTop="-10dp">
     </ImageView>
-
+    <!--socially-->
     <TextView
         android:id="@+id/socially"
         android:layout_width="wrap_content"
@@ -26,7 +26,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="190dp">
     </TextView>
-
+    <!--dp-->
     <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/profile_image"
         android:layout_width="100dp"
@@ -35,7 +35,7 @@
         android:layout_below="@id/socially"
         android:layout_marginTop="50dp"
         android:src="@drawable/dp" />
-
+    <!--name-->
     <TextView
         android:id="@+id/username"
         android:layout_width="wrap_content"
@@ -48,7 +48,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="10dp" />
 
-
+    <!--log in-->
     <Button
         android:textAllCaps="false"
         android:id="@+id/login_button"
@@ -74,7 +74,7 @@
         android:textStyle="bold"
         android:layout_marginTop="20dp">
     </TextView>
-
+    <!--sign up instruction-->
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -103,13 +103,14 @@
             android:textColor="@color/brownish">
         </TextView>
     </LinearLayout>
+    <!--separator-->
     <View
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:background="@color/lightgray"
         android:layout_alignParentBottom="true"
         android:layout_marginBottom="80dp"/>
-
+    <!--home indicator-->
     <ImageView
         android:id="@+id/bottom_line"
         android:layout_width="120dp"

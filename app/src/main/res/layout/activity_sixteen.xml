@@ -5,6 +5,7 @@
     android:layout_height="match_parent"
     android:background="@color/white"
     tools:context=".Sixteen">
+    <!--statusbar-->
     <ImageView
         android:id="@+id/status_bar"
         android:layout_width="match_parent"
@@ -20,7 +21,7 @@
         android:src="@drawable/dropdown"
         android:layout_marginTop="53dp"
         android:layout_marginLeft="245dp" />
-
+    <!--top options-->
     <LinearLayout
         android:id="@+id/follow_you_row"
         android:layout_width="match_parent"
@@ -327,7 +328,7 @@
             </LinearLayout>
         </ScrollView>
     </RelativeLayout>
-
+    <!--bottom options-->
     <LinearLayout
         android:id="@+id/bottom_menu"
         android:layout_width="match_parent"
@@ -368,6 +369,7 @@
             android:textSize="18sp"
             android:textColor="@color/brownish" />
     </LinearLayout>
+    <!--home indicator-->
     <ImageView
         android:id="@+id/bottom_line"
         android:layout_width="150dp"

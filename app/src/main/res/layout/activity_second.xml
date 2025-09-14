@@ -8,7 +8,7 @@
     tools:context=".Second"
     android:background="@color/brownish"
     >
-
+    <!--statusbar-->
     <ImageView
 
         android:id="@+id/status_bar"
@@ -16,14 +16,14 @@
         android:layout_height="60dp"
         android:src="@drawable/status_barbrown"
         android:layout_marginTop="-10dp" />
-
+    <!--back icon-->
     <ImageView
         android:id="@+id/back"
         android:layout_width="30dp"
         android:layout_height="30dp"
         android:src="@drawable/back"
         android:layout_marginTop="40dp" />
-
+    <!--main Socially-->
     <TextView
         android:id="@+id/socially"
         android:layout_width="wrap_content"
@@ -36,6 +36,7 @@
         android:layout_marginTop="-30dp">
 
     </TextView>
+    <!--camera-->
     <de.hdodenhof.circleimageview.CircleImageView
         android:layout_width="100dp"
         android:layout_height="100dp"
@@ -45,6 +46,7 @@
         android:scaleType="centerCrop"
         android:layout_below="@+id/socially">
     </de.hdodenhof.circleimageview.CircleImageView>
+    <!--account instruction-->
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -56,7 +58,7 @@
         android:id="@+id/description">
 
     </TextView>
-
+    <!--information input-->
     <TextView
         android:id="@+id/mainusername"
         android:layout_width="wrap_content"
@@ -193,7 +195,6 @@
 
     </EditText>
 
-
     <TextView
         android:id="@+id/mainpassword"
         android:layout_width="wrap_content"
@@ -230,6 +231,7 @@
         android:layout_marginRight="0dp">
 
     </ImageView>
+    <!--create account button-->
     <Button
         android:textAllCaps="false"
         android:layout_width="250dp"
@@ -242,6 +244,7 @@
         android:textSize="18dp"
         >
     </Button>
+    <!--home indicator-->
     <ImageView
         android:layout_width="200dp"
         android:layout_height="5dp"

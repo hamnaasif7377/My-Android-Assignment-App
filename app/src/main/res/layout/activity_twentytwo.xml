@@ -8,6 +8,7 @@
     tools:context=".Twentytwo"
     android:id="@+id/main"
     android:background="@color/white">
+    <!--statusbar-->
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="50dp"
@@ -18,6 +19,7 @@
             android:layout_height="match_parent"
             android:src="@drawable/status_bar1" />
     </RelativeLayout>
+    <!--scrollable page-->
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="0dp"
@@ -617,7 +619,7 @@
         </LinearLayout>
 
     </ScrollView>
-
+    <!--bottom bar-->
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="70dp"

@@ -7,6 +7,7 @@
     android:layout_height="match_parent"
     android:background="@color/black">
 
+    <!--statusbar-->
     <RelativeLayout
         android:id="@+id/status_bar"
         android:layout_width="match_parent"
@@ -19,6 +20,7 @@
             android:src="@drawable/status_barblack" />
     </RelativeLayout>
 
+    <!--statusbar-->
     <RelativeLayout
         android:id="@+id/center_container"
         android:layout_width="match_parent"
@@ -100,8 +102,7 @@
             android:clipToOutline="true"/>
 
     </RelativeLayout>
-
-
+    <!--bottom options-->
     <HorizontalScrollView
         android:id="@+id/mode_scroll"
         android:layout_width="match_parent"
@@ -209,6 +210,7 @@
         </LinearLayout>
     </HorizontalScrollView>
 
+    <!--statusbar-->
     <RelativeLayout
         android:id="@+id/bottom_bar"
         android:layout_width="match_parent"

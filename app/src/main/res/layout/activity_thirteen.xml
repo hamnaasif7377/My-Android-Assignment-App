@@ -7,6 +7,7 @@
     android:layout_height="match_parent"
     android:id="@+id/main"
     android:background="@color/white">
+    <!--statusbar-->
     <RelativeLayout
         android:id="@+id/status_bar"
         android:layout_width="match_parent"
@@ -420,7 +421,7 @@
             </GridLayout>
         </LinearLayout>
     </ScrollView>
-
+    <!--bottom bar-->
     <RelativeLayout
         android:id="@+id/bottom_bar"
         android:layout_width="match_parent"

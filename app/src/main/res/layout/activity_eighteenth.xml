@@ -9,6 +9,7 @@
     tools:context=".Eighteenth"
     android:background="@color/black">
 
+    <!--statusbar-->
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
@@ -20,7 +21,7 @@
             android:src="@drawable/status_barblack">
         </ImageView>
     </RelativeLayout>
-
+    <!--image-->
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
@@ -111,8 +112,7 @@
                 android:textColor="@color/pastel_gray"/>
         </LinearLayout>
     </RelativeLayout>
-
-
+    <!--bottombar-->
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"

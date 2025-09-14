@@ -10,7 +10,7 @@
     tools:context=".MainActivity"
     android:background="@color/white">
 
-
+    <!--statusbar-->
     <ImageView
         android:id="@+id/status_bar"
         android:layout_width="999dp"
@@ -19,6 +19,7 @@
         android:layout_marginTop="-10dp"
         >
     </ImageView>
+    <!--logo-->
     <ImageView
         android:id="@+id/logo"
         android:layout_width="wrap_content"
@@ -26,7 +27,7 @@
         android:src="@drawable/socially_logo"
         android:layout_centerInParent="true">
     </ImageView>
-
+    <!--smd text-->
     <TextView
         android:id="@+id/smdText"
         android:layout_width="wrap_content"
@@ -39,7 +40,6 @@
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="50dp">
     </TextView>
-
     <TextView
         android:id="@+id/fromText"
         android:layout_width="wrap_content"
@@ -51,7 +51,7 @@
         android:layout_centerHorizontal="true"
         >
     </TextView>
-
+    <!--home indicator-->
     <ImageView
         android:layout_width="200dp"
         android:layout_height="5dp"
