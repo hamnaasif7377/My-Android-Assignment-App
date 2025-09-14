@@ -37,7 +37,7 @@
         android:layout_below="@+id/mothertxt">
     </TextView>
     <ImageView
-        android:id="@+id/callend"
+        android:id="@+id/endcall"
         android:layout_width="100dp"
         android:layout_height="999dp"
         android:src="@drawable/callend"

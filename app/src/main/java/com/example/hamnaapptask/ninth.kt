@@ -14,12 +14,18 @@ class Ninth : AppCompatActivity() {
         findViewById<View>(R.id.back).setOnClickListener {
             val intent = Intent(this, Seventh::class.java)
             startActivity(intent)
-            finish() // optional: closes Ninth so back stack is clean
+            finish() // closes Ninth so back stack stays clean
         }
 
         // VideoCall → Tenth
         findViewById<View>(R.id.video_call).setOnClickListener {
             val intent = Intent(this, Tenth::class.java)
+            startActivity(intent)
+        }
+
+        // Camera → Seventeen
+        findViewById<View>(R.id.camera).setOnClickListener {
+            val intent = Intent(this, Seventeen::class.java)
             startActivity(intent)
         }
     }

@@ -11,7 +11,7 @@ class Twelve : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_twelve)
 
-        // 🔹 btnyou → back to Eleventh
+        // 🔹 btn_following → back to Eleventh
         val btnYou = findViewById<TextView>(R.id.btn_following)
         btnYou.setOnClickListener {
             startActivity(Intent(this, Eleventh::class.java))
@@ -34,6 +34,12 @@ class Twelve : AppCompatActivity() {
         val box5 = findViewById<LinearLayout>(R.id.box5)
         box5.setOnClickListener {
             startActivity(Intent(this, Thirteen::class.java))
+        }
+
+        // 🔹 follow_requests → Twentyone
+        val followRequests = findViewById<TextView>(R.id.followrequests)
+        followRequests.setOnClickListener {
+            startActivity(Intent(this, Twentyone::class.java))
         }
     }
 }

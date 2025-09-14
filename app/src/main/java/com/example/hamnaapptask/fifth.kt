@@ -1,4 +1,5 @@
 package com.example.hamnaapptask
+
 import android.content.Intent
 import android.os.Bundle
 import androidx.activity.OnBackPressedCallback
@@ -59,8 +60,16 @@ class Fifth : AppCompatActivity() {
             val intent = Intent(this, Nineteen::class.java)
             startActivity(intent)
         }
+
+        // Craig Story → Eighteenth
         findViewById<View>(R.id.craigstory).setOnClickListener {
             val intent = Intent(this, Eighteenth::class.java)
+            startActivity(intent)
+        }
+
+        // 🔹 Camera → Seventeenth
+        findViewById<View>(R.id.camera).setOnClickListener {
+            val intent = Intent(this, Seventeen::class.java)
             startActivity(intent)
         }
     }

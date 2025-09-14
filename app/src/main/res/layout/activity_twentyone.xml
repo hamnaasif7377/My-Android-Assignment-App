@@ -164,6 +164,8 @@
                         android:layout_gravity="center" />
                 </LinearLayout>
             </LinearLayout>
+
+            <!-- Profile Info Section -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -222,7 +224,6 @@
                     android:textSize="14sp"
                     android:textColor="@color/black"/>
 
-
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -244,8 +245,9 @@
                         android:textSize="14sp"
                         android:textColor="@color/black"/>
                 </LinearLayout>
-
             </LinearLayout>
+
+            <!-- Followers Section -->
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -264,7 +266,6 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:orientation="vertical">
-
 
                     <LinearLayout
                         android:layout_width="wrap_content"
@@ -300,6 +301,7 @@
                             android:textSize="14sp"
                             android:textStyle="bold"
                             android:textColor="@color/black"/>
+
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
@@ -317,6 +319,8 @@
                         android:textColor="@color/black"/>
                 </LinearLayout>
             </LinearLayout>
+
+            <!-- Action Buttons -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
@@ -339,8 +343,6 @@
                     android:background="@drawable/followbutton"
                     android:layout_marginEnd="4dp"/>
 
-
-
                 <TextView
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
@@ -353,7 +355,6 @@
                     android:textColor="@color/black"
                     android:layout_marginEnd="2dp"/>
 
-
                 <TextView
                     android:layout_width="0dp"
                     android:background="@drawable/translucentgraybutton"
@@ -365,7 +366,6 @@
                     android:textSize="16sp"
                     android:textColor="@color/black"
                     android:layout_marginEnd="2dp"/>
-
 
                 <RelativeLayout
                     android:layout_width="0dp"
@@ -380,8 +380,8 @@
                         android:src="@drawable/suggestedusers"
                         android:layout_centerInParent="true"/>
                 </RelativeLayout>
-
             </LinearLayout>
+
             <!-- Horizontal Highlights -->
             <HorizontalScrollView
                 android:layout_width="match_parent"
@@ -402,89 +402,18 @@
                         android:gravity="center"
                         android:layout_marginEnd="10dp">
 
-                        <ImageView
+                        <de.hdodenhof.circleimageview.CircleImageView
                             android:id="@+id/highlight1"
                             android:layout_width="70dp"
                             android:layout_height="70dp"
-                            android:src="@drawable/highlightdp"
+                            android:src="@drawable/post5"
                             android:scaleType="centerCrop"
                             android:padding="3dp" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Story 1"
-                            android:textSize="12sp"
-                            android:gravity="center"
-                            android:textColor="@color/black"
-                            android:layout_marginTop="4dp"/>
-                    </LinearLayout><LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical"
-                        android:gravity="center"
-                        android:layout_marginEnd="10dp">
-
-                        <ImageView
-                            android:id="@+id/highlight2"
-                            android:layout_width="70dp"
-                            android:layout_height="70dp"
-                            android:src="@drawable/dp"
-                            android:scaleType="centerCrop"
-                            android:padding="3dp" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Story 1"
-                            android:textSize="12sp"
-                            android:gravity="center"
-                            android:textColor="@color/black"
-                            android:layout_marginTop="4dp"/>
-                    </LinearLayout>
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical"
-                        android:gravity="center"
-                        android:layout_marginEnd="10dp">
-
-                        <ImageView
-                            android:id="@+id/highlight3"
-                            android:layout_width="70dp"
-                            android:layout_height="70dp"
-                            android:src="@drawable/dp"
-                            android:scaleType="centerCrop"
-                            android:padding="3dp" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Story 1"
-                            android:textSize="12sp"
-                            android:gravity="center"
-                            android:textColor="@color/black"
-                            android:layout_marginTop="4dp"/>
-                    </LinearLayout>
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical"
-                        android:gravity="center"
-                        android:layout_marginEnd="10dp">
-
-                        <ImageView
-                            android:id="@+id/highlight4"
-                            android:layout_width="70dp"
-                            android:layout_height="70dp"
-                            android:src="@drawable/dp"
-                            android:scaleType="centerCrop"
-                            android:padding="3dp" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Story 1"
+                            android:text="Highlight 1"
                             android:textSize="12sp"
                             android:gravity="center"
                             android:textColor="@color/black"
@@ -499,29 +428,105 @@
                         android:gravity="center"
                         android:layout_marginEnd="10dp">
 
-                        <ImageView
-                            android:id="@+id/highlight5"
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/highlight2"
                             android:layout_width="70dp"
                             android:layout_height="70dp"
-                            android:src="@drawable/dp"
+                            android:src="@drawable/post3"
                             android:scaleType="centerCrop"
                             android:padding="3dp" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Story 2"
+                            android:text="Highlight 2"
                             android:textSize="12sp"
                             android:gravity="center"
                             android:textColor="@color/black"
                             android:layout_marginTop="4dp"/>
                     </LinearLayout>
 
-                    <!-- Repeat similar structure for highlight3, highlight4, highlight_more -->
+                    <!-- Highlight 3 -->
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:layout_marginEnd="10dp">
 
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/highlight3"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:src="@drawable/post8"
+                            android:scaleType="centerCrop"
+                            android:padding="3dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Highlight 3"
+                            android:textSize="12sp"
+                            android:gravity="center"
+                            android:textColor="@color/black"
+                            android:layout_marginTop="4dp"/>
+                    </LinearLayout>
+
+                    <!-- Highlight 4 -->
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:layout_marginEnd="10dp">
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/highlight4"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:src="@drawable/post7"
+                            android:scaleType="centerCrop"
+                            android:padding="3dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Highlight 4"
+                            android:textSize="12sp"
+                            android:gravity="center"
+                            android:textColor="@color/black"
+                            android:layout_marginTop="4dp"/>
+                    </LinearLayout>
+
+                    <!-- Add New Highlight -->
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:layout_marginEnd="15dp">
+
+                        <TextView
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:background="@drawable/simplecircle"
+                            android:text="+"
+                            android:textSize="30sp"
+                            android:gravity="center"
+                            android:textColor="@color/brownish"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:text="New"
+                            android:textSize="12sp"
+                            android:textColor="@color/brownish"/>
+                    </LinearLayout>
                 </LinearLayout>
             </HorizontalScrollView>
 
+            <!-- Tab Bar -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="30dp"
@@ -530,7 +535,6 @@
                 android:layout_marginRight="15dp"
                 android:orientation="horizontal"
                 android:weightSum="5">
-
 
                 <ImageView
                     android:layout_width="0dp"
@@ -547,9 +551,8 @@
                     android:gravity="center"
                     android:src="@drawable/tag"
                     android:layout_marginEnd="2dp"/>
-
-
             </LinearLayout>
+
             <!-- Posts Grid -->
             <GridLayout
                 android:id="@+id/posts_grid"
@@ -564,7 +567,7 @@
                     android:layout_height="150dp"
                     android:layout_columnWeight="1"
                     android:layout_margin="2dp"
-                    android:src="@drawable/hummingbird"
+                    android:src="@drawable/post1"
                     android:scaleType="centerCrop" />
 
                 <ImageView
@@ -572,7 +575,7 @@
                     android:layout_height="150dp"
                     android:layout_columnWeight="1"
                     android:layout_margin="2dp"
-                    android:src="@drawable/hummingbird"
+                    android:src="@drawable/post2"
                     android:scaleType="centerCrop" />
 
                 <ImageView
@@ -580,37 +583,106 @@
                     android:layout_height="150dp"
                     android:layout_columnWeight="1"
                     android:layout_margin="2dp"
-                    android:src="@drawable/hummingbird"
+                    android:src="@drawable/post3"
                     android:scaleType="centerCrop" />
+
                 <ImageView
                     android:layout_width="0dp"
                     android:layout_height="150dp"
                     android:layout_columnWeight="1"
                     android:layout_margin="2dp"
-                    android:src="@drawable/hummingbird"
+                    android:src="@drawable/post4"
                     android:scaleType="centerCrop" />
+
                 <ImageView
                     android:layout_width="0dp"
                     android:layout_height="150dp"
                     android:layout_columnWeight="1"
                     android:layout_margin="2dp"
-                    android:src="@drawable/hummingbird"
+                    android:src="@drawable/post5"
                     android:scaleType="centerCrop" />
+
                 <!-- Add more ImageView here as needed -->
             </GridLayout>
-
         </LinearLayout>
     </ScrollView>
+
+    <!-- Bottom Navigation Bar -->
     <RelativeLayout
         android:layout_width="match_parent"
+        android:layout_height="70dp"
         android:layout_marginTop="-70dp"
-        android:layout_height="70dp">
+        android:background="@drawable/tab">
 
+        <!-- Background -->
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:scaleType="centerCrop"
-            android:src="@drawable/my_profile"/>
-    </RelativeLayout>
+            android:scaleType="centerCrop" />
 
+        <!-- Bottom Bar divided into 5 slots -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="5"
+            android:gravity="center">
+
+            <!-- Slot 1 -->
+            <LinearLayout
+                android:orientation="horizontal"
+                android:id="@+id/box1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center">
+            </LinearLayout>
+
+            <!-- Slot 2 -->
+            <LinearLayout
+                android:orientation="horizontal"
+                android:id="@+id/box2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center">
+            </LinearLayout>
+
+            <!-- Slot 3 -->
+            <LinearLayout
+                android:orientation="horizontal"
+                android:id="@+id/box3"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center">
+            </LinearLayout>
+
+            <!-- Slot 4 -->
+            <LinearLayout
+                android:orientation="horizontal"
+                android:id="@+id/box4"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center">
+            </LinearLayout>
+
+            <!-- Slot 5 (Profile Pic) -->
+            <LinearLayout
+                android:orientation="horizontal"
+                android:id="@+id/box5"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="-15dp"
+                    android:src="@drawable/dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
 </LinearLayout>

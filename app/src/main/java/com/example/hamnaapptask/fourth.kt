@@ -2,11 +2,13 @@ package com.example.hamnaapptask
 
 import android.content.Intent
 import android.os.Bundle
+import android.widget.Button
+import android.widget.ImageView
 import androidx.activity.enableEdgeToEdge
+import androidx.activity.addCallback
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
-import android.widget.Button
 
 class Fourth : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -20,13 +22,22 @@ class Fourth : AppCompatActivity() {
             insets
         }
 
-        // Find the login button
-        val loginButton = findViewById<Button>(R.id.login_button)
+        // 🔹 Back button → just finish Fourth (go back to existing Third)
+        val backButton = findViewById<ImageView>(R.id.back)
+        backButton.setOnClickListener {
+            finish()
+        }
 
-        // Set click listener
+        // 🔹 Login button → goes to Fifth
+        val loginButton = findViewById<Button>(R.id.login_button)
         loginButton.setOnClickListener {
             val intent = Intent(this, Fifth::class.java)
             startActivity(intent)
+        }
+
+        // 🔹 Handle system/emulator back → same as clicking back button
+        onBackPressedDispatcher.addCallback(this) {
+            finish()
         }
     }
 }
