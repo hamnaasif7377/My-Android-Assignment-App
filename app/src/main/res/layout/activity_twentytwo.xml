@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context=".Twentytwo"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    tools:context=".Twentytwo"
     android:id="@+id/main"
     android:background="@color/white">
-
     <!-- Status Bar -->
     <RelativeLayout
         android:layout_width="match_parent"
@@ -19,12 +19,10 @@
             android:layout_height="match_parent"
             android:src="@drawable/status_bar1" />
     </RelativeLayout>
-
-    <!-- Scrollable Content -->
     <ScrollView
-        android:id="@+id/scroll_area"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
         android:fillViewport="true"
         android:overScrollMode="never">
 
@@ -76,8 +74,6 @@
                     android:layout_centerVertical="true"
                     android:layout_marginEnd="16dp" />
             </RelativeLayout>
-
-            <!-- Profile Stats -->
             <LinearLayout
                 android:id="@+id/profile_stats"
                 android:layout_width="match_parent"
@@ -86,7 +82,7 @@
                 android:gravity="center"
                 android:weightSum="4">
 
-                <de.hdodenhof.circleimageview.CircleImageView
+                <ImageView
                     android:id="@+id/profile_pic"
                     android:layout_width="0dp"
                     android:layout_height="90dp"
@@ -246,6 +242,7 @@
                 </LinearLayout>
 
             </LinearLayout>
+
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -383,7 +380,6 @@
                 </RelativeLayout>
 
             </LinearLayout>
-            <!-- Horizontal Highlights -->
             <HorizontalScrollView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -525,7 +521,6 @@
 
                 </LinearLayout>
             </HorizontalScrollView>
-
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="30dp"
@@ -554,7 +549,6 @@
 
 
             </LinearLayout>
-            <!-- Posts Grid -->
             <GridLayout
                 android:id="@+id/posts_grid"
                 android:layout_width="match_parent"
@@ -578,7 +572,6 @@
                     android:layout_margin="2dp"
                     android:src="@drawable/post2"
                     android:scaleType="centerCrop" />
-
                 <ImageView
                     android:layout_width="0dp"
                     android:layout_height="150dp"
@@ -600,11 +593,44 @@
                     android:layout_margin="2dp"
                     android:src="@drawable/post5"
                     android:scaleType="centerCrop" />
-                <!-- Add more ImageView here as needed -->
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="150dp"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="2dp"
+                    android:src="@drawable/post6"
+                    android:scaleType="centerCrop" />
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="150dp"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="2dp"
+                    android:src="@drawable/post7"
+                    android:scaleType="centerCrop" />
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="150dp"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="2dp"
+                    android:src="@drawable/post8"
+                    android:scaleType="centerCrop" />
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="150dp"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="2dp"
+                    android:src="@drawable/post9"
+                    android:scaleType="centerCrop" />
             </GridLayout>
 
+
         </LinearLayout>
+
     </ScrollView>
+
+
+
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="70dp"
@@ -682,6 +708,4 @@
 
         </LinearLayout>
     </RelativeLayout>
-
-
 </LinearLayout>
