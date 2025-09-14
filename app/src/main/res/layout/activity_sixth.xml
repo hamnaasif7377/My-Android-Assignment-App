@@ -7,6 +7,92 @@
     android:background="@color/white"
     tools:context=".Sixth">
 
+    <RelativeLayout
+        android:id="@+id/bottom_bar"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/active_tab_search">
+
+        <!-- 5 equal parts -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="5">
+
+            <!-- Box 1 -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tab 1"
+                    android:textColor="@android:color/white" />
+            </LinearLayout>
+
+            <!-- Box 2 -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tab 2"
+                    android:textColor="@android:color/white" />
+            </LinearLayout>
+
+            <!-- Box 3 -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tab 3"
+                    android:textColor="@android:color/white" />
+            </LinearLayout>
+
+            <!-- Box 4 -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tab 4"
+                    android:textColor="@android:color/white" />
+            </LinearLayout>
+
+            <!-- Box 5 (Circular Image) -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:src="@drawable/dp" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </RelativeLayout>
+
     <ImageView
         android:id="@+id/status_bar"
         android:layout_width="match_parent"
@@ -290,19 +376,77 @@
         </LinearLayout>
     </ScrollView>
     <RelativeLayout
-        android:id="@+id/bottom_bar"
+        android:id="@+id/bar"
         android:layout_width="match_parent"
         android:layout_height="70dp"
         android:layout_alignParentBottom="true"
-        android:background="@drawable/active_tab_search">
-        <de.hdodenhof.circleimageview.CircleImageView
-            android:layout_width="30dp"
-            android:layout_height="35dp"
-            android:layout_alignParentEnd="true"
-            android:layout_marginTop="2dp"
-            android:layout_marginRight="26dp"
-            android:src="@drawable/dp">
-        </de.hdodenhof.circleimageview.CircleImageView>
+        android:background="@drawable/bottompg">
 
+        <!-- 5 equal parts -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="5">
+
+            <!-- Box 1 -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:id="@+id/box1"
+                android:gravity="center">
+
+            </LinearLayout>
+
+            <!-- Box 2 -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:id="@+id/box2"
+                android:gravity="center">
+            </LinearLayout>
+
+            <!-- Box 3 -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:id="@+id/box3"
+                android:gravity="center">
+            </LinearLayout>
+
+            <!-- Box 4 -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:id="@+id/box4"
+                android:gravity="center">
+            </LinearLayout>
+
+            <!-- Box 5 (Circular Image) -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:id="@+id/box5"
+                android:gravity="center">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="30dp"
+                    android:layout_height="35dp"
+                    android:layout_marginTop="-15dp"
+                    android:src="@drawable/dp" />
+            </LinearLayout>
+
+        </LinearLayout>
     </RelativeLayout>
+
 </RelativeLayout>

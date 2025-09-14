@@ -131,12 +131,13 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="60dp"
+            android:layout_height="80dp"
             android:orientation="horizontal"
+            android:id="@+id/intershala"
             android:padding="10dp">
             <ImageView
-                android:layout_width="50dp"
-                android:layout_height="50dp"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
                 android:src="@drawable/is" />
 
             <LinearLayout
@@ -159,20 +160,20 @@
                     android:layout_height="wrap_content"
                     android:text="internshala"
                     android:textColor="@color/grey"
-                    android:textSize="14sp" />
+                    android:textSize="16sp" />
             </LinearLayout>
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="60dp"
+            android:layout_height="80dp"
             android:orientation="horizontal"
             android:padding="10dp">
 
             <ImageView
-                android:layout_width="40dp"
-                android:layout_height="40dp"
-                android:src="@drawable/dp" />
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/hash" />
 
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -193,19 +194,19 @@
                     android:layout_height="wrap_content"
                     android:text="1000+ post"
                     android:textColor="@color/grey"
-                    android:textSize="14sp" />
+                    android:textSize="16sp" />
             </LinearLayout>
         </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="60dp"
+            android:layout_height="80dp"
             android:orientation="horizontal"
             android:padding="10dp">
 
             <ImageView
-                android:layout_width="40dp"
-                android:layout_height="40dp"
-                android:src="@drawable/dp" />
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/hash" />
 
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -224,21 +225,87 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="1000+ post"
+                    android:text="500+ post"
+                    android:textColor="@color/grey"
+                    android:textSize="16sp" />
+            </LinearLayout>
+        </LinearLayout>
+<LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/hash" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginStart="10dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="#internshala"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Internshala, B-610, Untech Business Zone,..."
+                    android:textColor="@color/grey"
+                    android:textSize="16sp" />
+            </LinearLayout>
+        </LinearLayout>
+<LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/hash" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginStart="10dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="#internshala"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="500+ post"
                     android:textColor="@color/grey"
                     android:textSize="14sp" />
             </LinearLayout>
         </LinearLayout>
 <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="60dp"
+            android:layout_height="80dp"
             android:orientation="horizontal"
             android:padding="10dp">
 
             <ImageView
-                android:layout_width="40dp"
-                android:layout_height="40dp"
-                android:src="@drawable/dp" />
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/hash" />
 
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -257,73 +324,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="1000+ post"
-                    android:textColor="@color/grey"
-                    android:textSize="14sp" />
-            </LinearLayout>
-        </LinearLayout>
-<LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:orientation="horizontal"
-            android:padding="10dp">
-
-            <ImageView
-                android:layout_width="40dp"
-                android:layout_height="40dp"
-                android:src="@drawable/dp" />
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:orientation="vertical"
-                android:layout_marginStart="10dp"
-                android:gravity="center_vertical">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="#internshala"
-                    android:textColor="@color/black"
-                    android:textSize="16sp" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="1000+ post"
-                    android:textColor="@color/grey"
-                    android:textSize="14sp" />
-            </LinearLayout>
-        </LinearLayout>
-<LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:orientation="horizontal"
-            android:padding="10dp">
-
-            <ImageView
-                android:layout_width="40dp"
-                android:layout_height="40dp"
-                android:src="@drawable/dp" />
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:orientation="vertical"
-                android:layout_marginStart="10dp"
-                android:gravity="center_vertical">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="#internshala"
-                    android:textColor="@color/black"
-                    android:textSize="16sp" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="1000+ post"
+                    android:text="100+ post"
                     android:textColor="@color/grey"
                     android:textSize="14sp" />
             </LinearLayout>

@@ -48,7 +48,7 @@
             android:layout_marginTop="12dp"
             android:layout_marginLeft="15dp"/>
         <ImageView
-            android:id="@+id/top_right_icon"
+            android:id="@+id/exit"
             android:layout_width="32dp"
             android:layout_height="32dp"
             android:src="@drawable/rightback"

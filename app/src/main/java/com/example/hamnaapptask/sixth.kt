@@ -1,20 +1,38 @@
 package com.example.hamnaapptask
 
+import android.content.Intent
 import android.os.Bundle
-import androidx.activity.enableEdgeToEdge
+import android.widget.ImageView
+import android.widget.LinearLayout
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 
 class Sixth : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        enableEdgeToEdge()
         setContentView(R.layout.activity_sixth)
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
-            val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
-            insets
+
+        // 🔹 box1 → Fifth
+        val box1 = findViewById<LinearLayout>(R.id.box1)
+        box1.setOnClickListener {
+            startActivity(Intent(this, Fifth::class.java))
+        }
+
+        // 🔹 box4 → Eleventh
+        val box4 = findViewById<LinearLayout>(R.id.box4)
+        box4.setOnClickListener {
+            startActivity(Intent(this, Eleventh::class.java))
+        }
+
+        // 🔹 box5 → Thirteen
+        val box5 = findViewById<LinearLayout>(R.id.box5)
+        box5.setOnClickListener {
+            startActivity(Intent(this, Thirteen::class.java))
+        }
+
+        // 🔹 search_icon → Seventh
+        val searchIcon = findViewById<ImageView>(R.id.search_icon)
+        searchIcon.setOnClickListener {
+            startActivity(Intent(this, Seventh::class.java))
         }
     }
 }

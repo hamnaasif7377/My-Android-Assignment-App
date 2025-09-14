@@ -156,52 +156,29 @@
                             android:layout_height="80dp"
                             app:civ_border_width="4dp"
                             app:civ_border_color="@color/plum"
-                            android:src="@drawable/joshua"
-
-                            android:scaleType="centerCrop"/>
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="joshua_I"
-                            android:textSize="14sp"
-                            android:textColor="@color/black"
-                            android:gravity="center"/>
-                    </LinearLayout>
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical"
-                        android:gravity="center"
-                        android:layout_marginEnd="16dp">
-
-                        <de.hdodenhof.circleimageview.CircleImageView
-                            android:layout_width="80dp"
-                            android:layout_height="80dp"
-                            android:src="@drawable/martini"
-                            app:civ_border_width="4dp"
-                            app:civ_border_color="@color/plum"
-                            android:scaleType="centerCrop"/>
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="martini_rond"
-                            android:textSize="14sp"
-                            android:textColor="@color/black"
-                            android:gravity="center"/>
-                    </LinearLayout>
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical"
-                        android:gravity="center"
-                        android:layout_marginEnd="16dp">
-
-                        <de.hdodenhof.circleimageview.CircleImageView
-                            android:layout_width="80dp"
-                            android:layout_height="80dp"
                             android:src="@drawable/andrew"
+
+                            android:scaleType="centerCrop"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="zackjohn"
+                            android:textSize="14sp"
+                            android:textColor="@color/black"
+                            android:gravity="center"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:layout_marginEnd="16dp">
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:src="@drawable/kiero"
                             app:civ_border_width="4dp"
                             app:civ_border_color="@color/plum"
                             android:scaleType="centerCrop"/>
@@ -209,7 +186,31 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="andrewww"
+                            android:text="kieron_d"
+                            android:textSize="14sp"
+                            android:textColor="@color/black"
+                            android:gravity="center"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:layout_marginEnd="16dp">
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/craigstory"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:src="@drawable/craig_dp"
+                            app:civ_border_width="4dp"
+                            app:civ_border_color="@color/plum"
+                            android:scaleType="centerCrop"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="craig_love"
                             android:textSize="14sp"
                             android:textColor="@color/black"
                             android:gravity="center"/>

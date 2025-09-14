@@ -1,20 +1,26 @@
 package com.example.hamnaapptask
 
+import android.content.Intent
 import android.os.Bundle
-import androidx.activity.enableEdgeToEdge
+import android.view.View
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 
 class Ninth : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        enableEdgeToEdge()
         setContentView(R.layout.activity_ninth)
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
-            val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
-            insets
+
+        // Back → Seventh
+        findViewById<View>(R.id.back).setOnClickListener {
+            val intent = Intent(this, Seventh::class.java)
+            startActivity(intent)
+            finish() // optional: closes Ninth so back stack is clean
+        }
+
+        // VideoCall → Tenth
+        findViewById<View>(R.id.video_call).setOnClickListener {
+            val intent = Intent(this, Tenth::class.java)
+            startActivity(intent)
         }
     }
 }

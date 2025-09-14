@@ -59,5 +59,9 @@ class Fifth : AppCompatActivity() {
             val intent = Intent(this, Nineteen::class.java)
             startActivity(intent)
         }
+        findViewById<View>(R.id.craigstory).setOnClickListener {
+            val intent = Intent(this, Eighteenth::class.java)
+            startActivity(intent)
+        }
     }
 }

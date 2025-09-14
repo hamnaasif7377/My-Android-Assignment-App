@@ -103,6 +103,13 @@
                 android:textSize="14sp"
                 android:textStyle="bold"
                 android:textColor="@color/pastel_gray"/>
+            <ImageView
+                android:id="@+id/close"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/close"
+                android:layout_marginLeft="200dp"
+                android:textColor="@color/pastel_gray"/>
         </LinearLayout>
     </RelativeLayout>
 
