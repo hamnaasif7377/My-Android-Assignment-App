@@ -4,6 +4,7 @@ import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import android.widget.ImageView
+import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.activity.addCallback
 import androidx.appcompat.app.AppCompatActivity
@@ -22,21 +23,24 @@ class Fourth : AppCompatActivity() {
             insets
         }
 
-        // 🔹 Back button → just finish Fourth (go back to existing Third)
         val backButton = findViewById<ImageView>(R.id.back)
         backButton.setOnClickListener {
             finish()
         }
 
-        // 🔹 Login button → goes to Fifth
         val loginButton = findViewById<Button>(R.id.login_button)
         loginButton.setOnClickListener {
             val intent = Intent(this, Fifth::class.java)
             startActivity(intent)
         }
 
-        // 🔹 Handle system/emulator back → same as clicking back button
-        onBackPressedDispatcher.addCallback(this) {
+         val signupText = findViewById<TextView>(R.id.signup_text)
+        signupText.setOnClickListener {
+            val intent = Intent(this, Second::class.java)
+            startActivity(intent)
+        }
+
+       onBackPressedDispatcher.addCallback(this) {
             finish()
         }
     }

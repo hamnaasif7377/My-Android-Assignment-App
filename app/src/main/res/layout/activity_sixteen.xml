@@ -5,8 +5,6 @@
     android:layout_height="match_parent"
     android:background="@color/white"
     tools:context=".Sixteen">
-
-    <!-- Status bar -->
     <ImageView
         android:id="@+id/status_bar"
         android:layout_width="match_parent"
@@ -23,7 +21,6 @@
         android:layout_marginTop="53dp"
         android:layout_marginLeft="245dp" />
 
-    <!-- Top row -->
     <LinearLayout
         android:id="@+id/follow_you_row"
         android:layout_width="match_parent"
@@ -72,7 +69,6 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="3dp">
 
-        <!-- Main Image -->
         <ImageView
             android:id="@+id/main_picture"
             android:layout_width="match_parent"
@@ -81,7 +77,6 @@
             android:src="@drawable/image5"
             android:layout_marginTop="80dp" />
 
-        <!-- Icons + Text Row -->
         <LinearLayout
             android:id="@+id/icons_row"
             android:layout_width="wrap_content"
@@ -92,7 +87,6 @@
             android:layout_marginBottom="10dp"
             android:layout_marginRight="10dp">
 
-            <!-- i1 with white background -->
             <ImageView
                 android:id="@+id/i1"
                 android:layout_width="wrap_content"
@@ -102,7 +96,6 @@
                 android:src="@drawable/infinity"
                 android:layout_marginRight="8dp" />
 
-            <!-- i2 with purple background -->
             <ImageView
                 android:id="@+id/i2"
                 android:layout_width="wrap_content"
@@ -112,7 +105,6 @@
                 android:src="@drawable/camera"
                 android:layout_marginRight="8dp" />
 
-            <!-- Group for i3 + text with gray background -->
             <LinearLayout
                 android:id="@+id/i3_text_container"
                 android:layout_width="wrap_content"
@@ -141,7 +133,6 @@
 
         </LinearLayout>
 
-        <!-- Scrollable grid under main picture -->
         <ScrollView
             android:id="@+id/scroll_container"
             android:layout_width="match_parent"

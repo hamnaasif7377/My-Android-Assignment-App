@@ -37,15 +37,12 @@
 
     </TextView>
     <de.hdodenhof.circleimageview.CircleImageView
-        android:layout_width="80dp"
-        android:layout_height="80dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
         android:layout_centerHorizontal="true"
-        android:src="@drawable/camera"
+        android:src="@drawable/cmerapic"
         android:id="@+id/dp"
         android:scaleType="centerCrop"
-        app:civ_border_width="2dp"
-        app:civ_circle_background_color="@color/grey"
-        app:civ_border_color="@color/black"
         android:layout_below="@+id/socially">
     </de.hdodenhof.circleimageview.CircleImageView>
     <TextView
@@ -224,13 +221,13 @@
         android:textColor="@color/white">
     </EditText>
     <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/camera"
+        android:layout_width="60dp"
+        android:layout_height="30dp"
+        android:src="@drawable/eye"
         android:layout_alignEnd="@+id/password"
         android:layout_alignBottom="@id/password"
-        android:layout_marginBottom="18dp"
-        android:layout_marginRight="20dp">
+        android:layout_marginBottom="15dp"
+        android:layout_marginRight="0dp">
 
     </ImageView>
     <Button
@@ -249,9 +246,9 @@
         android:layout_width="200dp"
         android:layout_height="5dp"
         android:src="@drawable/linewhite"
-        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
         android:layout_centerHorizontal="true"
-        android:layout_below="@+id/create_account_button"
+        android:layout_alignParentBottom="true"
         >
     </ImageView>
 

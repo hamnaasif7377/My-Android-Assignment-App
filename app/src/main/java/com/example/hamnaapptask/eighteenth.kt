@@ -13,7 +13,7 @@ class Eighteenth : AppCompatActivity() {
         findViewById<View>(R.id.close).setOnClickListener {
             val intent = Intent(this, Fifth::class.java)
             startActivity(intent)
-            finish() // optional: closes Pg18 so it doesn’t stay in back stack
+            finish()
         }
     }
 }

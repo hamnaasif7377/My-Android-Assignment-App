@@ -45,7 +45,6 @@
             android:textColor="@color/brownish"/>
     </LinearLayout>
 
-    <!-- Underlines -->
     <ImageView
         android:layout_width="230dp"
         android:layout_height="10dp"
@@ -60,7 +59,6 @@
         android:layout_marginTop="78dp"
         android:src="@drawable/brownunderline" />
 
-    <!-- Scrollable Content -->
     <ScrollView
         android:id="@+id/scroll_feed"
         android:layout_width="match_parent"
@@ -76,7 +74,6 @@
             android:orientation="vertical"
             android:padding="10dp">
 
-            <!-- 1. karennne liked 3 posts -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="35dp"
@@ -108,7 +105,6 @@
                 android:layout_marginBottom="10dp"
                 android:padding="8dp">
 
-                <!-- First line: New in bold -->
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -117,7 +113,6 @@
                     android:textSize="18sp"
                     android:paddingBottom="5dp"/>
 
-                <!-- Second line: dp, text, images -->
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -125,14 +120,12 @@
                     android:paddingBottom="5dp"
                     android:gravity="center_vertical">
 
-                    <!-- Profile dp -->
                     <ImageView
                         android:layout_width="50dp"
                         android:layout_height="50dp"
                         android:src="@drawable/karennne"
                         android:layout_marginRight="8dp"/>
 
-                    <!-- Notification text -->
                     <TextView
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
@@ -142,7 +135,7 @@
                         android:textColor="@color/black"/>
 
 
-                    <!-- Post thumbnails -->
+
                     <ImageView
                         android:layout_width="65dp"
                         android:layout_height="65dp"
@@ -167,7 +160,6 @@
                 android:layout_marginTop="-10dp"
                 android:padding="8dp">
 
-                <!-- First line: New in bold -->
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -176,21 +168,18 @@
                     android:textSize="18sp"
                     android:paddingBottom="5dp"/>
 
-                <!-- Second line: DP, text, post image -->
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
                     android:gravity="center_vertical">
 
-                    <!-- Profile DP -->
                     <ImageView
                         android:layout_width="60dp"
                         android:layout_height="60dp"
                         android:src="@drawable/grp"
                         android:layout_marginEnd="8dp"/>
 
-                    <!-- Notification text -->
                     <TextView
                         android:layout_width="170dp"
                         android:layout_height="wrap_content"
@@ -200,8 +189,6 @@
                         android:textColor="@color/black"
                         android:scrollHorizontally="false"/>
 
-
-                    <!-- Right-side post image -->
                     <ImageView
                         android:layout_width="65dp"
                         android:layout_height="65dp"
@@ -220,7 +207,6 @@
                 android:layout_marginTop="-5dp"
                 android:padding="8dp">
 
-                <!-- First line: Today in bold -->
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -229,21 +215,18 @@
                     android:textSize="18sp"
                     android:paddingBottom="5dp"/>
 
-                <!-- Second line: DP, text, post image -->
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
                     android:gravity="center_vertical">
 
-                    <!-- Profile DP -->
                     <ImageView
                         android:layout_width="50dp"
                         android:layout_height="50dp"
                         android:src="@drawable/craig_dp"
                         android:layout_marginEnd="8dp"/>
 
-                    <!-- Notification text -->
                     <TextView
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
@@ -253,7 +236,6 @@
                         android:textColor="@color/black"
                         android:scrollHorizontally="false"/>
 
-                    <!-- Right-side post image -->
                     <ImageView
                         android:layout_width="65dp"
                         android:layout_height="65dp"
@@ -267,7 +249,6 @@
                     android:gravity="center_vertical"
                     android:layout_marginTop="-5dp">
 
-                    <!-- Heart icon -->
                     <ImageView
                         android:layout_width="24dp"
                         android:layout_height="24dp"
@@ -275,7 +256,6 @@
                         android:layout_marginStart="40dp"
                         android:layout_marginEnd="10dp"/>
 
-                    <!-- Reply text in gray -->
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -294,14 +274,12 @@
                 android:layout_marginTop="-5dp"
                 android:padding="8dp">
 
-                <!-- Profile DP -->
                 <ImageView
                     android:layout_width="50dp"
                     android:layout_height="50dp"
                     android:src="@drawable/martini"
                     android:layout_marginEnd="8dp"/>
 
-                <!-- Notification text -->
                 <TextView
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
@@ -310,7 +288,6 @@
                     android:textSize="16sp"
                     android:textColor="@color/black"/>
 
-                <!-- Message button -->
                 <Button
                     android:textAllCaps="false"
                     android:layout_width="120dp"
@@ -328,14 +305,12 @@
                 android:gravity="center_vertical"
                 android:padding="8dp">
 
-                <!-- Profile DP -->
                 <ImageView
                     android:layout_width="50dp"
                     android:layout_height="50dp"
                     android:src="@drawable/maxjac"
                     android:layout_marginEnd="8dp"/>
 
-                <!-- Notification text -->
                 <TextView
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
@@ -344,7 +319,6 @@
                     android:textSize="16sp"
                     android:textColor="@color/black"/>
 
-                <!-- Message button -->
                 <Button
                     android:textAllCaps="false"
                     android:layout_width="120dp"
@@ -363,14 +337,12 @@
                 android:gravity="center_vertical"
                 android:padding="8dp">
 
-                <!-- Profile DP -->
                 <ImageView
                     android:layout_width="50dp"
                     android:layout_height="50dp"
                     android:src="@drawable/potter"
                     android:layout_marginEnd="8dp"/>
 
-                <!-- Notification text -->
                 <TextView
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
@@ -379,7 +351,6 @@
                     android:textSize="16sp"
                     android:textColor="@color/black"/>
 
-                <!-- Message button -->
                 <Button
                     android:textAllCaps="false"
                     android:layout_width="120dp"
@@ -405,7 +376,6 @@
                 android:layout_marginTop="-10dp"
                 android:padding="8dp">
 
-                <!-- First line: New in bold -->
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -414,7 +384,6 @@
                     android:textSize="18sp"
                     android:paddingBottom="5dp"/>
 
-                <!-- Second line: DP, text, post image -->
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -422,14 +391,12 @@
                     android:id="@+id/kyanprofile"
                     android:gravity="center_vertical">
 
-                    <!-- Profile DP -->
                     <ImageView
                         android:layout_width="60dp"
                         android:layout_height="60dp"
                         android:src="@drawable/kyancoleman"
                         android:layout_marginEnd="8dp"/>
 
-                    <!-- Notification text -->
                     <TextView
                         android:layout_width="170dp"
                         android:layout_height="wrap_content"
@@ -438,7 +405,7 @@
                         android:textSize="16sp"
                         android:textColor="@color/black"
                         android:scrollHorizontally="false"/>
-                    <!-- Message button -->
+
                     <Button
                         android:textAllCaps="false"
                         android:layout_width="120dp"
@@ -468,7 +435,6 @@
             android:orientation="horizontal"
             android:weightSum="5">
 
-            <!-- Box 1 -->
             <LinearLayout
                 android:id="@+id/box1"
                 android:orientation="horizontal"
@@ -477,8 +443,6 @@
                 android:layout_weight="1"
                 android:gravity="center">
             </LinearLayout>
-
-            <!-- Box 2 -->
             <LinearLayout
                 android:id="@+id/box2"
                 android:orientation="horizontal"
@@ -489,7 +453,6 @@
 
             </LinearLayout>
 
-            <!-- Box 3 -->
             <LinearLayout
                 android:id="@+id/box3"
                 android:orientation="horizontal"
@@ -499,7 +462,6 @@
                 android:gravity="center">
             </LinearLayout>
 
-            <!-- Box 4 -->
             <LinearLayout
                 android:id="@+id/box4"
                 android:orientation="horizontal"
@@ -509,7 +471,6 @@
                 android:gravity="center">
             </LinearLayout>
 
-            <!-- Box 5 (Profile Image) -->
             <LinearLayout
                 android:id="@+id/box5"
                 android:orientation="horizontal"

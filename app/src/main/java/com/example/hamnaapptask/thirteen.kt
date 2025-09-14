@@ -13,7 +13,6 @@ class Thirteen : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_thirteen)
 
-        // 🔹 Edit Profile button → Fifteen
         val editProfileButton = findViewById<Button>(R.id.editprofilebutton)
         editProfileButton.setOnClickListener {
             startActivity(Intent(this, Fifteen::class.java))
@@ -23,19 +22,16 @@ class Thirteen : AppCompatActivity() {
             startActivity(Intent(this, Fifth::class.java))
             finish()
         }
-        // 🔹 box2 → Sixth
-        val box2 = findViewById<LinearLayout>(R.id.box2)
+         val box2 = findViewById<LinearLayout>(R.id.box2)
         box2.setOnClickListener {
             startActivity(Intent(this, Sixth::class.java))
         }
 
-        // 🔹 box4 → Eleventh
         val box4 = findViewById<LinearLayout>(R.id.box4)
         box4.setOnClickListener {
             startActivity(Intent(this, Eleventh::class.java))
         }
 
-        // 🔹 h1 → Fourteen
         val h1 = findViewById<LinearLayout>(R.id.h1)
         h1.setOnClickListener {
             startActivity(Intent(this, Fourteen::class.java))

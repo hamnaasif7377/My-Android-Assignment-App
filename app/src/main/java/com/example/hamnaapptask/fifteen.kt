@@ -10,7 +10,6 @@ class Fifteen : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_fifteen)
 
-        // DP → Sixteen
         findViewById<View>(R.id.dp).setOnClickListener {
             val intent = Intent(this, Sixteen::class.java)
             startActivity(intent)

@@ -7,7 +7,6 @@
     android:background="@color/white"
     tools:context=".Eleventh">
 
-    <!-- Status Bar -->
     <ImageView
         android:id="@+id/status_bar"
         android:layout_width="match_parent"
@@ -16,7 +15,6 @@
         android:src="@drawable/status_bar1"
         android:layout_alignParentTop="true" />
 
-    <!-- Row with Following and You -->
     <LinearLayout
         android:id="@+id/follow_you_row"
         android:layout_width="match_parent"
@@ -47,7 +45,6 @@
             android:textColor="@color/brownish"/>
     </LinearLayout>
 
-    <!-- Underlines -->
     <ImageView
         android:layout_width="230dp"
         android:layout_height="10dp"
@@ -62,7 +59,6 @@
         android:layout_marginTop="78dp"
         android:src="@drawable/grayunderline" />
 
-    <!-- Scrollable Content -->
     <ScrollView
         android:id="@+id/scroll_feed"
         android:layout_width="match_parent"
@@ -78,7 +74,6 @@
             android:orientation="vertical"
             android:padding="10dp">
 
-            <!-- 1. karennne liked 3 posts -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -129,22 +124,18 @@
                     </LinearLayout>
                 </LinearLayout>
             </LinearLayout>
-
-            <!-- 2. kiero_d, zackjohn, craig_love liked joshua_l photo -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:paddingBottom="10dp"
                 android:orientation="horizontal">
 
-                <!-- Profile DP -->
                 <ImageView
                     android:layout_width="60dp"
                     android:layout_height="60dp"
                     android:src="@drawable/grp"
                     android:layout_marginRight="8dp"/>
 
-                <!-- Text in the middle -->
                 <TextView
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
@@ -153,7 +144,6 @@
                     android:textSize="16sp"
                     android:textColor="@color/black"/>
 
-                <!-- Right-side post image -->
                 <ImageView
                     android:layout_width="60dp"
                     android:layout_height="60dp"
@@ -161,7 +151,6 @@
             </LinearLayout>
 
 
-            <!-- 3. kiero_d started following craig_love -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -200,7 +189,6 @@
                     android:layout_weight="1"
                     android:orientation="vertical">
 
-                    <!-- Caption -->
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -214,7 +202,6 @@
                         android:columnCount="6"
                         android:layout_marginTop="5dp">
 
-                        <!-- First row: 6 images -->
                         <ImageView
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
@@ -281,24 +268,18 @@
                     </GridLayout>
                 </LinearLayout>
             </LinearLayout>
-
-
-
-            <!-- 5. maxjacobson and zackjohn liked mis_potter post -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:paddingBottom="10dp"
                 android:orientation="horizontal">
 
-                <!-- Profile DP -->
                 <ImageView
                     android:layout_width="60dp"
                     android:layout_height="60dp"
                     android:src="@drawable/grp"
                     android:layout_marginRight="8dp"/>
 
-                <!-- Text in the middle -->
                 <TextView
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
@@ -307,14 +288,11 @@
                     android:textSize="16sp"
                     android:textColor="@color/black"/>
 
-                <!-- Right-side post image -->
                 <ImageView
                     android:layout_width="60dp"
                     android:layout_height="60dp"
                     android:src="@drawable/squareimage1"/>
             </LinearLayout>
-
-            <!-- 6. maxjacobson and craig_love liked martini_rond post -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -342,8 +320,6 @@
                     android:layout_height="60dp"
                     android:src="@drawable/squareimage4"/>
             </LinearLayout>
-
-            <!-- 7. karennne liked martini_rond's comment -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -369,8 +345,6 @@
                     android:layout_height="60dp"
                     android:src="@drawable/squareimage5"/>
             </LinearLayout>
-
-            <!-- 8. maxjacobson liked 3 posts -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -416,23 +390,18 @@
 
         </LinearLayout>
     </ScrollView>
-
-    <!-- Bottom Navigation Bar -->
-    <RelativeLayout
+   <RelativeLayout
         android:id="@+id/bottom_bar"
         android:layout_width="match_parent"
         android:layout_height="80dp"
         android:layout_alignParentBottom="true"
         android:background="@drawable/pgelevenbottombar">
-
-        <!-- 5 equal boxes -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="horizontal"
             android:weightSum="5">
 
-            <!-- Box 1 -->
             <LinearLayout
                 android:id="@+id/box1"
                 android:orientation="horizontal"
@@ -443,7 +412,6 @@
 
             </LinearLayout>
 
-            <!-- Box 2 -->
             <LinearLayout
                 android:id="@+id/box2"
                 android:orientation="horizontal"
@@ -454,7 +422,6 @@
 
             </LinearLayout>
 
-            <!-- Box 3 -->
             <LinearLayout
                 android:id="@+id/box3"
                 android:orientation="horizontal"
@@ -465,7 +432,6 @@
 
             </LinearLayout>
 
-            <!-- Box 4 -->
             <LinearLayout
                 android:id="@+id/box4"
                 android:orientation="horizontal"
@@ -476,7 +442,6 @@
 
             </LinearLayout>
 
-            <!-- Box 5 (Profile Image) -->
             <LinearLayout
                 android:id="@+id/box5"
                 android:orientation="horizontal"

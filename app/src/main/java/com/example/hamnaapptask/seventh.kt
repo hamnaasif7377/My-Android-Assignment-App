@@ -10,7 +10,6 @@ class Seventh : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_seventh)
 
-        // Navigate to Ninth activity on click
         findViewById<View>(R.id.intershala).setOnClickListener {
             val intent = Intent(this, Ninth::class.java)
             startActivity(intent)

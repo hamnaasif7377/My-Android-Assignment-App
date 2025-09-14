@@ -10,23 +10,20 @@ class Sixteen : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_sixteen)
 
-        // Next → Fifteen
-        findViewById<View>(R.id.btn_next).setOnClickListener {
+       findViewById<View>(R.id.btn_next).setOnClickListener {
             val intent = Intent(this, Fifteen::class.java)
             intent.flags = Intent.FLAG_ACTIVITY_CLEAR_TOP or Intent.FLAG_ACTIVITY_SINGLE_TOP
             startActivity(intent)
             finish() // optional, closes Sixteen
         }
 
-        // Cancel → Fifteen
-        findViewById<View>(R.id.btn_cancel).setOnClickListener {
+         findViewById<View>(R.id.btn_cancel).setOnClickListener {
             val intent = Intent(this, Fifteen::class.java)
             intent.flags = Intent.FLAG_ACTIVITY_CLEAR_TOP or Intent.FLAG_ACTIVITY_SINGLE_TOP
             startActivity(intent)
             finish() // optional
         }
 
-        // Photo → Seventeen
         findViewById<View>(R.id.btn_photo).setOnClickListener {
             startActivity(Intent(this, Seventeen::class.java))
         }

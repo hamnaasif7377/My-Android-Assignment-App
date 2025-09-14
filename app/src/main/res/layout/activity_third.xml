@@ -80,7 +80,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="60dp"
+        android:layout_marginBottom="30dp"
         android:orientation="horizontal">
 
 
@@ -107,8 +107,8 @@
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:background="@color/lightgray"
-        android:layout_marginTop="640dp"
-        android:layout_marginBottom="1dp"/>
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="80dp"/>
 
     <ImageView
         android:id="@+id/bottom_line"

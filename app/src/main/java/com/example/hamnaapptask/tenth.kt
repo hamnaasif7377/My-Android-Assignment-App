@@ -9,7 +9,6 @@ class Tenth : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_tenth)
 
-        // 🔹 endcall → just finish this activity to go back to Ninth
         val endCall = findViewById<ImageView>(R.id.endcall)
         endCall.setOnClickListener {
             finish() // closes Tenth and goes back to Ninth

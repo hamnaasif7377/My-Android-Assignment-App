@@ -9,7 +9,6 @@ class Seventeen : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_seventeen)
 
-        // Exit → just go back to previous screen (whatever opened Seventeen)
         findViewById<View>(R.id.exit).setOnClickListener {
             finish()
         }

@@ -14,14 +14,12 @@
         android:layout_alignParentBottom="true"
         android:background="@drawable/active_tab_search">
 
-        <!-- 5 equal parts -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="horizontal"
             android:weightSum="5">
 
-            <!-- Box 1 -->
             <LinearLayout
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
@@ -35,7 +33,6 @@
                     android:textColor="@android:color/white" />
             </LinearLayout>
 
-            <!-- Box 2 -->
             <LinearLayout
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
@@ -49,7 +46,6 @@
                     android:textColor="@android:color/white" />
             </LinearLayout>
 
-            <!-- Box 3 -->
             <LinearLayout
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
@@ -63,7 +59,6 @@
                     android:textColor="@android:color/white" />
             </LinearLayout>
 
-            <!-- Box 4 -->
             <LinearLayout
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
@@ -77,7 +72,6 @@
                     android:textColor="@android:color/white" />
             </LinearLayout>
 
-            <!-- Box 5 (Circular Image) -->
             <LinearLayout
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
@@ -112,7 +106,6 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <!-- Search container -->
             <RelativeLayout
                 android:id="@+id/search_container"
                 android:layout_width="match_parent"
@@ -143,13 +136,12 @@
                     android:id="@+id/qr"
                     android:layout_width="24dp"
                     android:layout_height="24dp"
-                    android:src="@drawable/camera"
+                    android:src="@drawable/qr"
                     android:layout_alignParentEnd="true"
                     android:layout_marginEnd="20dp"
                     android:layout_centerVertical="true" />
             </RelativeLayout>
 
-            <!-- Button row -->
             <LinearLayout
                 android:id="@+id/button_row"
                 android:layout_width="match_parent"
@@ -222,13 +214,11 @@
                     android:textColor="@color/brownish" />
             </LinearLayout>
 
-            <!-- First block (2 small stacked + 1 big square) -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
 
-                <!-- Left column (two smaller stacked images) -->
                 <LinearLayout
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
@@ -382,14 +372,12 @@
         android:layout_alignParentBottom="true"
         android:background="@drawable/bottompg">
 
-        <!-- 5 equal parts -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="horizontal"
             android:weightSum="5">
 
-            <!-- Box 1 -->
             <LinearLayout
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
@@ -400,7 +388,6 @@
 
             </LinearLayout>
 
-            <!-- Box 2 -->
             <LinearLayout
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
@@ -410,7 +397,6 @@
                 android:gravity="center">
             </LinearLayout>
 
-            <!-- Box 3 -->
             <LinearLayout
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
@@ -420,7 +406,6 @@
                 android:gravity="center">
             </LinearLayout>
 
-            <!-- Box 4 -->
             <LinearLayout
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
@@ -430,7 +415,6 @@
                 android:gravity="center">
             </LinearLayout>
 
-            <!-- Box 5 (Circular Image) -->
             <LinearLayout
                 android:layout_width="0dp"
                 android:layout_height="match_parent"

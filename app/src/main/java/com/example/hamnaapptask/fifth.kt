@@ -21,7 +21,6 @@ class Fifth : AppCompatActivity() {
             insets
         }
 
-        // ✅ Handle back press using OnBackPressedDispatcher
         onBackPressedDispatcher.addCallback(this, object : OnBackPressedCallback(true) {
             override fun handleOnBackPressed() {
                 val intent = Intent(Intent.ACTION_MAIN)
@@ -31,43 +30,38 @@ class Fifth : AppCompatActivity() {
             }
         })
 
-        // Box2 → Sixth
         findViewById<View>(R.id.box2).setOnClickListener {
             val intent = Intent(this, Sixth::class.java)
             startActivity(intent)
         }
 
-        // Box4 → Eleventh
+
         findViewById<View>(R.id.box4).setOnClickListener {
             val intent = Intent(this, Eleventh::class.java)
             startActivity(intent)
         }
 
-        // Box5 → Thirteen
+
         findViewById<View>(R.id.box5).setOnClickListener {
             val intent = Intent(this, Thirteen::class.java)
             startActivity(intent)
         }
 
-        // Msg Icon → Eighth
         findViewById<View>(R.id.msgiconmain).setOnClickListener {
             val intent = Intent(this, Eighth::class.java)
             startActivity(intent)
         }
 
-        // My Story → Nineteen
         findViewById<View>(R.id.mystory).setOnClickListener {
             val intent = Intent(this, Nineteen::class.java)
             startActivity(intent)
         }
 
-        // Craig Story → Eighteenth
         findViewById<View>(R.id.craigstory).setOnClickListener {
             val intent = Intent(this, Eighteenth::class.java)
             startActivity(intent)
         }
 
-        // 🔹 Camera → Seventeenth
         findViewById<View>(R.id.camera).setOnClickListener {
             val intent = Intent(this, Seventeen::class.java)
             startActivity(intent)

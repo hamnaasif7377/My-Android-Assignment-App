@@ -8,7 +8,6 @@
     tools:context=".Twentyone"
     android:id="@+id/main"
     android:background="@color/white">
-    <!-- Status Bar -->
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="50dp"
@@ -31,7 +30,6 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <!-- Top Bar -->
             <RelativeLayout
                 android:id="@+id/top_bar"
                 android:layout_width="match_parent"
@@ -391,7 +389,6 @@
                     android:layout_height="wrap_content"
                     android:orientation="horizontal">
 
-                    <!-- Highlight 1 -->
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -488,7 +485,6 @@
                             android:layout_marginTop="4dp"/>
                     </LinearLayout>
 
-                    <!-- Highlight 2 -->
                     <LinearLayout
 
                         android:layout_width="wrap_content"
@@ -516,8 +512,6 @@
                             android:textSize="12sp"
                             android:textColor="@color/brownish"/>
                     </LinearLayout>
-
-                    <!-- Repeat similar structure for highlight3, highlight4, highlight_more -->
 
                 </LinearLayout>
             </HorizontalScrollView>
@@ -631,81 +625,73 @@
 
 
 
-<RelativeLayout
-android:layout_width="match_parent"
-android:layout_height="70dp"
-android:layout_marginTop="-70dp"
-android:background="@drawable/tab">
-
-<!-- Background -->
-<ImageView
+    <RelativeLayout
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:scaleType="centerCrop" />
+    android:layout_height="70dp"
+    android:layout_marginTop="-70dp"
+    android:background="@drawable/tab">
 
-<!-- Bottom Bar divided into 5 slots -->
-<LinearLayout
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="horizontal"
-    android:weightSum="5"
-    android:gravity="center">
-
-    <!-- Slot 1 -->
-    <LinearLayout
-        android:orientation="horizontal"
-        android:id="@+id/box1"
-        android:layout_width="0dp"
+    <ImageView
+        android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_weight="1"
-        android:gravity="center">
-    </LinearLayout>
+        android:scaleType="centerCrop" />
 
-    <!-- Slot 2 -->
     <LinearLayout
-        android:orientation="horizontal"
-        android:id="@+id/box2"
-        android:layout_width="0dp"
+        android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_weight="1"
-        android:gravity="center">
-    </LinearLayout>
-
-    <!-- Slot 3 -->
-    <LinearLayout
         android:orientation="horizontal"
-        android:id="@+id/box3"
-        android:layout_width="0dp"
-        android:layout_height="match_parent"
-        android:layout_weight="1"
+        android:weightSum="5"
         android:gravity="center">
-    </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:id="@+id/box1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+        </LinearLayout>
 
-    <!-- Slot 4 -->
-    <LinearLayout
-        android:orientation="horizontal"
-        android:id="@+id/box4"
-        android:layout_width="0dp"
-        android:layout_height="match_parent"
-        android:layout_weight="1"
-        android:gravity="center">
-    </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:id="@+id/box2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+        </LinearLayout>
 
-    <!-- Slot 5 (Profile Pic) -->
-    <LinearLayout
-        android:orientation="horizontal"
-        android:id="@+id/box5"
-        android:layout_width="0dp"
-        android:layout_height="match_parent"
-        android:layout_weight="1"
-        android:gravity="center">
-        <de.hdodenhof.circleimageview.CircleImageView
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            android:layout_marginTop="-15dp"
-            android:src="@drawable/dp" />
-    </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:id="@+id/box3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+        </LinearLayout>
 
-</LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:id="@+id/box4"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+        </LinearLayout>
+    
+        <LinearLayout
+            android:orientation="horizontal"
+            android:id="@+id/box5"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="-15dp"
+                android:src="@drawable/dp" />
+        </LinearLayout>
+
+    </LinearLayout>
 </RelativeLayout>
 </LinearLayout>

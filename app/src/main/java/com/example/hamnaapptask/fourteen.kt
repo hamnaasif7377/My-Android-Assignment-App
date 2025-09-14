@@ -10,7 +10,7 @@ class Fourteen : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_fourteen)
 
-        // Handle back button click
+
         findViewById<View>(R.id.back).setOnClickListener {
             val intent = Intent(this, Thirteen::class.java)
             startActivity(intent)

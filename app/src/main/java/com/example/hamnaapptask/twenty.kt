@@ -10,7 +10,6 @@ class Twenty : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_twenty)
 
-        // 🔹 close → Fifth
         val close = findViewById<ImageView>(R.id.close)
         close.setOnClickListener {
             startActivity(Intent(this, Fifth::class.java))
