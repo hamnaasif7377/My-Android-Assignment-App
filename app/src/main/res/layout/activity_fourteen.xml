@@ -77,6 +77,44 @@
             android:layout_marginLeft="328dp">
         </ImageView>
 
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="140dp"
+            android:layout_marginLeft="40dp"
+            android:src="@drawable/moretranslucentredlike"/>
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="80dp"
+            android:layout_marginLeft="25dp"
+            android:src="@drawable/translucentredlike"/>
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="110dp"
+            android:layout_marginLeft="25dp"
+            android:src="@drawable/translucentredlike">
+        </ImageView>
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="53dp"
+            android:layout_marginLeft="40dp"
+            android:src="@drawable/likered">
+        </ImageView>
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="30dp"
+            android:src="@drawable/moretranslucentredlike">
+        </ImageView>
         <de.hdodenhof.circleimageview.CircleImageView
             android:layout_width="60dp"
             android:layout_height="50dp"

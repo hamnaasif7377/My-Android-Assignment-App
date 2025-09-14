@@ -86,12 +86,20 @@
 
 
     <de.hdodenhof.circleimageview.CircleImageView
-        android:layout_width="40dp"
-        android:layout_height="40dp"
-        android:src="@drawable/craig_dp"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/gdp"
         android:id="@+id/dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginLeft="10dp"/>
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="15dp"/>
+    <ImageView
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:textStyle="bold"
+        android:src="@drawable/plus"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="43dp"
+        android:textColor="@color/pastel_gray"/>
 
     <LinearLayout
         android:layout_width="wrap_content"
@@ -99,25 +107,43 @@
         android:layout_alignParentTop="true"
         android:layout_marginTop="30dp"
         android:orientation="horizontal"
-        android:layout_marginLeft="50dp">
+        android:layout_marginLeft="35dp">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="craig_love"
+            android:text="gursky.studio"
             android:textSize="14sp"
             android:textColor="@color/white"
             android:textStyle="bold"
             android:layout_marginLeft="15dp"
             android:id="@+id/donthave"/>
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:textStyle="bold"
+            android:src="@drawable/whitetick"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="2dp"
+            android:textColor="@color/pastel_gray"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="    4h"
+            android:text="   11h"
             android:textSize="14sp"
             android:textStyle="bold"
             android:textColor="@color/pastel_gray"/>
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:id="@+id/close"
+            android:textStyle="bold"
+            android:src="@drawable/close"
+            android:layout_marginLeft="170dp"
+            android:layout_marginTop="4dp"
+            android:textColor="@color/pastel_gray"/>
+
     </LinearLayout>
 </RelativeLayout>
 

@@ -36,13 +36,26 @@
             android:adjustViewBounds="true">
         </ImageView>
 
-        <ImageView
+        <LinearLayout
+            android:orientation="horizontal"
+            android:id="@+id/top_bar"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:src="@drawable/story_icons"
+            android:layout_height="70dp"
+            android:background="@drawable/story_icons"
             android:adjustViewBounds="true"
-            android:layout_alignParentTop="true">
-        </ImageView>
+            android:layout_alignParentTop="true"
+            android:weightSum="8">
+            <LinearLayout
+                android:id="@+id/cross"
+                android:orientation="horizontal"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.25"
+                android:gravity="center">
+            </LinearLayout>
+
+        </LinearLayout>
+
 
     </RelativeLayout>
 
@@ -50,13 +63,46 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1.5"
-        android:gravity="center">
-        <ImageView
+        android:gravity="center"
+        android:background="@drawable/editstory">
+
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:src="@drawable/editstory">
-        </ImageView>
+            android:orientation="horizontal"
+            android:weightSum="5">
 
+            <!-- Box 1 (2/5) -->
+            <LinearLayout
+                android:id="@+id/b1"
+                android:orientation="horizontal"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2.25"
+                android:gravity="center">
+            </LinearLayout>
+
+            <!-- Box 2 (2/5) -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:id="@+id/b2"
+                android:orientation="horizontal"
+                android:gravity="center">
+            </LinearLayout>
+
+            <!-- Box 3 (1/5) -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:orientation="horizontal"
+                android:layout_height="match_parent"
+                android:layout_weight="0.75"
+                android:gravity="center">
+            </LinearLayout>
+
+        </LinearLayout>
     </RelativeLayout>
+
 
 </LinearLayout>
